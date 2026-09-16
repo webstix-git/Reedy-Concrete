@@ -3,6 +3,7 @@ import { Oswald, Roboto } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SiteEffects from "@/components/SiteEffects";
+import BackToTop from "@/components/BackToTop";
 import "./globals.css";
 import "./header.css";
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         {children}
         <Footer />
+        <BackToTop />
         <SiteEffects />
       </body>
     </html>
