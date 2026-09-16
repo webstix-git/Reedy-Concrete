@@ -20,7 +20,7 @@ export default function Footer() {
             />
             <p className="tagline">{company.tagline}</p>
             <p className="footer-brand-copy">
-              Family-owned concrete construction serving Wisconsin, Minnesota, and Iowa—experienced
+              Family-owned concrete construction serving Wisconsin, Minnesota, and Iowa with experienced
               crews and work you can count on.
             </p>
             <div className="footer-social">
@@ -89,17 +89,18 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <div className="wrap footer-bottom-inner">
-            <p>
-              &copy; {year} {company.legalName}. All rights reserved.
-            </p>
-            <div className="footer-legal">
+          <div className="wrap footer-bottom-inner footer-bottom-inner--inline">
+            <p className="footer-copyright-line">
+              <span>
+                &copy; {year} {company.legalName.replace(/\.$/, "")}. All rights reserved.
+              </span>
               {footerLegal.map((item) => (
-                <Link key={item.href} href={item.href}>
-                  {item.label}
-                </Link>
+                <span key={item.href} className="footer-copyright-sep">
+                  {" | "}
+                  <Link href={item.href}>{item.label}</Link>
+                </span>
               ))}
-            </div>
+            </p>
           </div>
         </div>
       </footer>

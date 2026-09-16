@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <!-- Left ribbon -->
+  <path
+    stroke="#E0002C"
+    stroke-width="2.4"
+    stroke-linejoin="round"
+    d="M18.5 5.5h12.2L32 20.5 24.2 20.5 18.5 5.5z"
+  />
+  <!-- Right ribbon -->
+  <path
+    stroke="#E0002C"
+    stroke-width="2.4"
+    stroke-linejoin="round"
+    d="M33.3 5.5h12.2L39.8 20.5 32 20.5 33.3 5.5z"
+  />
+  <!-- Medal -->
+  <circle cx="32" cy="40" r="16.5" stroke="#E0002C" stroke-width="2.4"/>
+  <!-- Star -->
+  <path
+    stroke="#E0002C"
+    stroke-width="2.2"
+    stroke-linejoin="round"
+    d="m32 29 2.95 5.95 6.55.95-4.75 4.62 1.12 6.52L32 43.65l-5.87 3.09 1.12-6.52-4.75-4.62 6.55-.95z"
+  />
+</svg>

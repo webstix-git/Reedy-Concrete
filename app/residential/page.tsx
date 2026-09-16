@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import CtaBand from "@/components/CtaBand";
 import PageHero from "@/components/PageHero";
@@ -31,26 +32,32 @@ const services = [
 const reasons = [
   {
     title: "40+ years of experience",
+    icon: "/icons/why-experience.svg",
     copy: "More than four decades of residential concrete work across foundations, flatwork, driveways, and structures.",
   },
   {
     title: "Family-owned company",
+    icon: "/icons/team.svg",
     copy: "A multi-generational business that treats every homeowner project with care and accountability.",
   },
   {
     title: "Experienced long-term crews",
-    copy: "Highly trained employees, many with 10–35+ years on the job, who keep pours consistent and clean.",
+    icon: "/icons/crew.svg",
+    copy: "Highly trained employees, many with 10-35+ years on the job, who keep pours consistent and clean.",
   },
   {
     title: "Modern equipment",
+    icon: "/icons/equipment.svg",
     copy: "Trimble layout and Somero screeding support accuracy on residential pours that need to look right and last.",
   },
   {
     title: "Quality workmanship",
+    icon: "/icons/quality-batch.svg",
     copy: "Square, level, and finished to a standard homeowners can see and trust for years after the pour.",
   },
   {
     title: "Reliable project execution",
+    icon: "/icons/why-project.svg",
     copy: "Clear communication and steady scheduling so residential work moves forward without surprises.",
   },
 ];
@@ -138,6 +145,17 @@ export default function Page() {
               </li>
             ))}
           </ol>
+          <div className="section-actions job-runs-actions">
+            <Link className="text-link job-runs-link" href="/contact">
+              <span>Request a Free Quote</span>
+              <svg className="job-runs-link-arrow" viewBox="0 0 16 16" aria-hidden="true" width="14" height="14">
+                <path
+                  fill="currentColor"
+                  d="M2.5 7.25h8.19L7.22 3.78l1.06-1.06L13.75 8l-5.47 5.28-1.06-1.06 3.47-3.47H2.5v-1.5z"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -150,6 +168,7 @@ export default function Page() {
           <ul className="about-pillar-row about-approach-row">
             {reasons.map((item) => (
               <li key={item.title} className="about-pillar reveal">
+                <img className="about-pillar-icon" src={item.icon} alt="" width={40} height={40} />
                 <h3>{item.title}</h3>
                 <p>{item.copy}</p>
               </li>

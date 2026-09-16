@@ -64,7 +64,7 @@ export default function Page() {
               <div className="contact-info-row contact-info-row--social">
                 <div>
                   <h3>Connect</h3>
-                  <div className="social-icons">
+                  <div className="footer-social contact-info-social">
                     <a
                       href={company.facebookUrl}
                       target="_blank"
@@ -72,7 +72,7 @@ export default function Page() {
                       aria-label="Facebook"
                     >
                       <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        <path d="M14 13.5h2.5l.5-3H14V8.5c0-.9.3-1.5 1.6-1.5H17V4.1C16.4 4 15.5 4 14.5 4 12.1 4 10.5 5.5 10.5 8.2V10.5H8v3h2.5V20h3.5v-6.5z" />
                       </svg>
                     </a>
                     <a
@@ -82,7 +82,7 @@ export default function Page() {
                       aria-label="LinkedIn"
                     >
                       <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" />
+                        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S.02 4.88.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.5h4.56V23H.22V8.5zM8.34 8.5h4.37v1.98h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 7V23h-4.56v-6.7c0-1.6-.03-3.65-2.22-3.65-2.23 0-2.57 1.74-2.57 3.54V23H8.34V8.5z" />
                       </svg>
                     </a>
                   </div>

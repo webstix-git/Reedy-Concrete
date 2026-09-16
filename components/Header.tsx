@@ -99,6 +99,16 @@ export default function Header() {
             Request a Quote
           </Link>
         </nav>
+
+        <div className="header-aside">
+          <a className="header-phone header-phone--desktop" href={`tel:${company.phoneTel}`}>
+            <PhoneIcon />
+            <span>{company.phoneDisplay}</span>
+          </a>
+          <Link href="/contact" className="nav-cta nav-cta--desktop">
+            Request a Quote
+          </Link>
+        </div>
       </div>
     </header>
   );

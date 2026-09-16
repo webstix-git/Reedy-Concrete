@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <!-- Stars (scaled up to fill frame) -->
+  <path stroke="#E0002C" stroke-width="2.2" stroke-linejoin="round" d="m14 12.5 2.55 5.15 5.7.83-4.12 4.02.97 5.65L14 25.4l-5.1 2.68.97-5.65-4.12-4.02 5.7-.83z"/>
+  <path stroke="#E0002C" stroke-width="2.4" stroke-linejoin="round" d="m32 4 3.1 6.25 6.9 1-5 4.85 1.18 6.85L32 19.7l-6.18 3.25 1.18-6.85-5-4.85 6.9-1z"/>
+  <path stroke="#E0002C" stroke-width="2.2" stroke-linejoin="round" d="m50 12.5 2.55 5.15 5.7.83-4.12 4.02.97 5.65L50 25.4l-5.1 2.68.97-5.65-4.12-4.02 5.7-.83z"/>
+  <!-- Badge -->
+  <circle cx="32" cy="38" r="15.5" stroke="#E0002C" stroke-width="2.5"/>
+  <circle cx="32" cy="38" r="11.5" stroke="#E0002C" stroke-width="2.2"/>
+  <path stroke="#E0002C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" d="m25.5 38.3 4 4 9-9.2"/>
+  <!-- Ribbons -->
+  <path stroke="#E0002C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M23.5 51.5 17.5 62M40.5 51.5 46.5 62"/>
+</svg>

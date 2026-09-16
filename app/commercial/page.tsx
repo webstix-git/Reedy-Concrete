@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import CtaBand from "@/components/CtaBand";
 import PageHero from "@/components/PageHero";
@@ -43,26 +44,32 @@ const markets = [
 const reasons = [
   {
     title: "40+ years of experience",
+    icon: "/icons/why-experience.svg",
     copy: "More than four decades of commercial, industrial, and agricultural concrete work across the Upper Midwest.",
   },
   {
     title: "Experienced long-term crews",
-    copy: "Highly trained employees, many with 10–35+ years on the job, who keep complex pours accurate and on schedule.",
+    icon: "/icons/crew.svg",
+    copy: "Highly trained employees, many with 10-35+ years on the job, who keep complex pours accurate and on schedule.",
   },
   {
     title: "Modern equipment",
+    icon: "/icons/equipment.svg",
     copy: "Trimble layout and Somero screeding support precision on demanding commercial and industrial pours.",
   },
   {
     title: "Quality workmanship",
+    icon: "/icons/quality-batch.svg",
     copy: "Tight tolerances, clean finishes, and work that holds up when mistakes would cost everyone.",
   },
   {
     title: "Reliable project execution",
+    icon: "/icons/why-project.svg",
     copy: "Clear communication and disciplined placement help protect quality, schedule, and budget.",
   },
   {
     title: "Competitive pricing",
+    icon: "/icons/money-bag.svg",
     copy: "Straightforward pricing and careful job planning so projects stay within budget without cutting corners.",
   },
 ];
@@ -93,7 +100,7 @@ export default function Page() {
     <main>
       <PageHero
         title="Commercial"
-        description="Concrete construction for commercial, industrial, and agricultural projects across Wisconsin, Minnesota, and Iowa-built for schedule, quality, and scale."
+        description="Concrete construction for commercial, industrial, and agricultural projects across Wisconsin, Minnesota, and Iowa, built for schedule, quality, and scale."
         imageSrc="/assets/photos/commercial-foundation-pump.jpg"
         ariaLabel="Commercial Services"
         className="page-hero--banner-service"
@@ -119,7 +126,7 @@ export default function Page() {
               <p className="job-runs-lead">
                 Commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking
                 work all need the same thing: crews who protect quality and keep the job moving.
-                That is where Reedy focuses—foundations and flatwork for large-scale projects done
+                That is where Reedy focuses: foundations and flatwork for large-scale projects done
                 right the first time.
               </p>
             </div>
@@ -151,6 +158,17 @@ export default function Page() {
               </li>
             ))}
           </ol>
+          <div className="section-actions job-runs-actions">
+            <Link className="text-link job-runs-link" href="/contact">
+              <span>Request a Free Quote</span>
+              <svg className="job-runs-link-arrow" viewBox="0 0 16 16" aria-hidden="true" width="14" height="14">
+                <path
+                  fill="currentColor"
+                  d="M2.5 7.25h8.19L7.22 3.78l1.06-1.06L13.75 8l-5.47 5.28-1.06-1.06 3.47-3.47H2.5v-1.5z"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -163,6 +181,7 @@ export default function Page() {
           <ul className="about-pillar-row about-approach-row">
             {reasons.map((item) => (
               <li key={item.title} className="about-pillar reveal">
+                <img className="about-pillar-icon" src={item.icon} alt="" width={40} height={40} />
                 <h3>{item.title}</h3>
                 <p>{item.copy}</p>
               </li>

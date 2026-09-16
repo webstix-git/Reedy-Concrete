@@ -25,8 +25,8 @@ export const footerServices = [
 ] as const;
 
 export const footerLegal = [
-  { href: "/site-map", label: "Site Map" },
+  { href: "/site-map", label: "Sitemap" },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/ai-policy", label: "AI Policy" },
-  { href: "/service-index", label: "Service Index" },
+  { href: "/service-index", label: "AI Readiness Service Index" },
 ] as const;

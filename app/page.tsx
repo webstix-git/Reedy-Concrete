@@ -81,6 +81,22 @@ export default function Page() {
             from a basement wall to a 60,000 square foot industrial floor.
           </p>
           <div className="pour-grid">
+            <Link className="pour-card reveal" href="/residential">
+              <img
+                src="/assets/photos/residential.jpg"
+                alt="Residential foundation concrete work"
+                width={900}
+                height={1200}
+              />
+              <div className="pour-card-copy">
+                <h3>Residential</h3>
+                <p>
+                  Foundations and flatwork,
+                  <br />
+                  poured square and level.
+                </p>
+              </div>
+            </Link>
             <Link className="pour-card reveal" href="/commercial">
               <img
                 src="/assets/photos/commercial-foundation-pump.jpg"
@@ -113,22 +129,6 @@ export default function Page() {
                 </p>
               </div>
             </Link>
-            <Link className="pour-card reveal" href="/residential">
-              <img
-                src="/assets/photos/residential.jpg"
-                alt="Residential foundation concrete work"
-                width={900}
-                height={1200}
-              />
-              <div className="pour-card-copy">
-                <h3>Residential</h3>
-                <p>
-                  Foundations and flatwork,
-                  <br />
-                  poured square and level.
-                </p>
-              </div>
-            </Link>
           </div>
         </div>
       </section>
@@ -155,7 +155,7 @@ export default function Page() {
           </h2>
           <p>
             Family-owned in Galesville, Reedy Concrete is built around long-term people and
-            long-term standards. Plenty of our crew members have been with us for decades—so the
+            long-term standards. Plenty of our crew members have been with us for decades, so the
             work stays consistent from the first pour to the next.
           </p>
           <blockquote className="why-split-quote">
@@ -230,7 +230,7 @@ export default function Page() {
                 <span className="line accent">Driven by Family.</span>
               </h2>
               <p>
-                For more than 40 years, Reedy Concrete has earned its reputation the long way—through
+                For more than 40 years, Reedy Concrete has earned its reputation the long way, through
                 experienced crews, quality workmanship, and dependable service. We are family-owned
                 and multi-generational, with a straightforward focus on getting the work done right.
               </p>

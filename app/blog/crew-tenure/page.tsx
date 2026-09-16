@@ -3,8 +3,8 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Why 10–35+ Years of Crew Tenure Changes the Pour | Reedy Concrete Blog",
-  description: "Why 10–35+ years of crew tenure changes the pour at family-owned Reedy Concrete in Galesville, WI.",
+  title: "Why 10-35+ Years of Crew Tenure Changes the Pour | Reedy Concrete Blog",
+  description: "Why 10-35+ years of crew tenure changes the pour at family-owned Reedy Concrete in Galesville, WI.",
 };
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
     <main>
       <PageHero
         title="Blog"
-        description="Why 10–35+ years of crew tenure changes the pour—how long-term people protect quality, schedule, and judgment on family-owned Reedy Concrete jobsites."
+        description="Why 10-35+ years of crew tenure changes the pour: how long-term people protect quality, schedule, and judgment on family-owned Reedy Concrete jobsites."
         ariaLabel="Blog article"
       />
       
@@ -23,7 +23,7 @@ export default function Page() {
                 <span aria-hidden="true">/</span>
                 <Link href="/blog">Blog</Link>
                 <span aria-hidden="true">/</span>
-                <span className="current">Why 10–35+ Years of Crew Tenure Changes the Pour</span>
+                <span className="current">Why 10-35+ Years of Crew Tenure Changes the Pour</span>
               </nav>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Page() {
                     </ul>
       
                     <h2>A Family-Owned Company Built Around This</h2>
-                    <p>Reedy Concrete is a multi-generational, family-owned contractor based in Galesville, Wisconsin. For more than 40 years, we have built the company around long-term employees—many with 10–35+ years of tenure. That continuity shows up in communication on site, fewer surprises for project partners, and finishes that hold up under Midwestern conditions, from basement walls to large industrial floors.</p>
+                    <p>Reedy Concrete is a multi-generational, family-owned contractor based in Galesville, Wisconsin. For more than 40 years, we have built the company around long-term employees, many with 10-35+ years of tenure. That continuity shows up in communication on site, fewer surprises for project partners, and finishes that hold up under Midwestern conditions, from basement walls to large industrial floors.</p>
                     <p>It's easy for a company to talk about experience. What actually matters is whether that experience is still on the crew when your job gets poured. At Reedy, it usually is.</p>
       
                     <h2>What This Means for You</h2>

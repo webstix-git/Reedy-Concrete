@@ -15,7 +15,7 @@ const approachItems = [
   {
     title: "Quality workmanship",
     icon: "/icons/approach-quality.png",
-    copy: "We take pride in work that holds up—sound structure, clean finishes, and concrete you can count on for years.",
+    copy: "We take pride in work that holds up: sound structure, clean finishes, and concrete you can count on for years.",
   },
   {
     title: "Precision",
@@ -30,12 +30,12 @@ const approachItems = [
   {
     title: "Customer service",
     icon: "/icons/approach-execution.png",
-    copy: "We treat every project like a relationship, not a one-off pour—listening closely and staying easy to work with from start to finish.",
+    copy: "We treat every project like a relationship, not a one-off pour, listening closely and staying easy to work with from start to finish.",
   },
   {
     title: "Safety & professionalism",
-    icon: "/icons/approach-delivery.png",
-    copy: "Jobsites stay organized and professional, with safety as a standing part of how crews work—not an afterthought.",
+    icon: "/icons/safety.svg",
+    copy: "Jobsites stay organized and professional, with safety as a standing part of how crews work, not an afterthought.",
   },
   {
     title: "Competitive pricing",
@@ -47,18 +47,18 @@ const approachItems = [
 const pillars = [
   {
     title: "Family ownership",
-    icon: "/icons/family.svg",
+    icon: "/icons/team.svg",
     copy: "The Reedy family still runs the business day to day, with more than one generation working alongside each other.",
   },
   {
     title: "Long-term crews",
     icon: "/icons/crew.svg",
-    copy: "Many of our people have been here 10–35+ years. That kind of tenure shows up in the quality of the work.",
+    copy: "Many of our people have been here 10-35+ years. That kind of tenure shows up in the quality of the work.",
   },
   {
     title: "Long-term relationships",
-    icon: "/icons/delivery.png",
-    copy: "We build lasting ties with customers and employees alike—because good concrete work is built on trust.",
+    icon: "/icons/handshake.svg",
+    copy: "We build lasting ties with customers and employees alike, because good concrete work is built on trust.",
   },
 ];
 
@@ -106,12 +106,12 @@ export default function Page() {
                 <p>
                   Reedy Concrete started as a family-owned and operated business with a simple goal:
                   deliver dependable, high-quality concrete work customers can count on. Over the past
-                  40+ years, we have grown by earning trust—one job, and one relationship, at a time.
+                  40+ years, we have grown by earning trust, one job, and one relationship, at a time.
                 </p>
                 <p>
                   Based in Galesville, Wisconsin, we serve customers throughout Wisconsin, Minnesota,
                   and Iowa. The Reedy family remains actively involved, with multiple generations
-                  working together. Many of our crew members have been with us for 10–35+ years, which
+                  working together. Many of our crew members have been with us for 10-35+ years, which
                   says a lot about how we treat our people and our community.
                 </p>
               </div>
