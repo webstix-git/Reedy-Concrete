@@ -7,7 +7,7 @@ import ServiceAreaMap from "@/components/ServiceAreaMap";
 export const metadata: Metadata = {
   title: "Reedy Concrete | Concrete Construction in WI, MN & IA",
   description:
-    "Reedy Concrete provides experienced residential, commercial, industrial, and agricultural concrete construction throughout Wisconsin, Minnesota, and Iowa.",
+    "For 50 years, Reedy Concrete has been the trusted choice for high-quality commercial, industrial, agricultural, and residential concrete construction across Wisconsin, Minnesota, and Iowa.",
 };
 
 const showcaseImages = [
@@ -50,15 +50,15 @@ export default function Page() {
         <div className="wrap-wide">
           <div className="hero-content">
             <h1>
-              <span className="line line--hero-lead">40+ Years of Experience.</span>
+              <span className="line line--hero-lead">50 Years of Experience.</span>
               <span className="line line--hero-accent">
                 <span className="accent">Concrete</span>
               </span>
               <span className="line line--hero-tail">Built to Last.</span>
             </h1>
             <p className="hero-lead">
-              Reedy Concrete provides dependable, high-quality foundations and flatwork for
-              residential, commercial, industrial, and agricultural projects across Wisconsin,
+              For 50 years, Reedy Concrete has been the trusted choice for high-quality commercial,
+              industrial, agricultural, and residential concrete construction across Wisconsin,
               Minnesota, and Iowa.
             </p>
             <div className="hero-actions hero-actions--single">
@@ -77,8 +77,9 @@ export default function Page() {
             One standard, every <span className="accent">sector</span>
           </h2>
           <p className="section-intro reveal">
-            Every job runs through the same crews, the same equipment, and the same tolerances -
-            from a basement wall to a 60,000 square foot industrial floor.
+            Every job runs through the same experienced crews, specialized equipment, and commitment
+            to quality - from residential work to large-scale commercial, industrial, and agricultural
+            projects.
           </p>
           <div className="pour-grid">
             <Link className="pour-card reveal" href="/residential">
@@ -91,9 +92,9 @@ export default function Page() {
               <div className="pour-card-copy">
                 <h3>Residential</h3>
                 <p>
-                  Foundations and flatwork,
+                  Foundations and flatwork
                   <br />
-                  poured square and level.
+                  for residential projects.
                 </p>
               </div>
             </Link>
@@ -107,9 +108,9 @@ export default function Page() {
               <div className="pour-card-copy">
                 <h3>Commercial</h3>
                 <p>
-                  Footings, foundations, and flatwork
+                  Foundations and flatwork
                   <br />
-                  for retail and mixed-use builds.
+                  for commercial projects.
                 </p>
               </div>
             </Link>
@@ -123,9 +124,9 @@ export default function Page() {
               <div className="pour-card-copy">
                 <h3>Industrial</h3>
                 <p>
-                  High-tolerance floors placed
+                  Precise floors placed with
                   <br />
-                  by laser screed.
+                  Somero Laser Screeds.
                 </p>
               </div>
             </Link>
@@ -142,25 +143,25 @@ export default function Page() {
             height={933}
           />
           <div className="why-split-badge">
-            <strong>40+ Years</strong>
+            <strong>50 Years</strong>
             <span>Galesville, Wisconsin</span>
           </div>
         </div>
         <div className="why-split-copy reveal">
           <p className="section-label">Why Reedy</p>
           <h2 id="why-title" className="section-title">
-            Three Generations,
+            Multiple Generations,
             <br />
             One <span className="accent">Crew</span>
           </h2>
           <p>
-            Family-owned in Galesville, Reedy Concrete is built around long-term people and
-            long-term standards. Plenty of our crew members have been with us for decades, so the
-            work stays consistent from the first pour to the next.
+            Family-owned and operated in Galesville, Wisconsin, Reedy Concrete is built around
+            long-term people and a reputation for reliability. Many team members have been with us
+            for 10–35+ years, so the work stays consistent from the first job to the next.
           </p>
           <blockquote className="why-split-quote">
-            You get the same foreman, the same finishers, and the same standard on the second job as
-            the first.
+            We build our reputation on three simple promises: reliable service, competitive pricing,
+            and finishing every job on time.
           </blockquote>
           <Link className="btn btn-outline" href="/contact">
             Request a Quote
@@ -180,17 +181,18 @@ export default function Page() {
                 <span className="accent">Proven Experience.</span>
               </h2>
               <p>
-                Reedy Concrete combines decades of experience with modern technology for
-                precision, consistency, and dependable delivery.
+                Reedy Concrete combines 50 years of experience with advanced technology for
+                precision, efficiency, and dependable workmanship.
               </p>
               <ul className="tech-list tech-list--spaced">
                 <li>
                   <strong>Trimble Robotic Stations</strong>
-                  Support precise layout and measurement on complex pours and critical alignments.
+                  Improve precision, efficiency, and workmanship on complex pours and critical
+                  alignments.
                 </li>
                 <li>
                   <strong>Somero Laser Screeds</strong>
-                  Support precision flatwork and concrete finishing for consistently level surfaces.
+                  Support precise flatwork and concrete finishing for consistently level surfaces.
                 </li>
               </ul>
             </div>
@@ -230,9 +232,10 @@ export default function Page() {
                 <span className="line accent">Driven by Family.</span>
               </h2>
               <p>
-                For more than 40 years, Reedy Concrete has earned its reputation the long way, through
-                experienced crews, quality workmanship, and dependable service. We are family-owned
-                and multi-generational, with a straightforward focus on getting the work done right.
+                For 50 years, Reedy Concrete has earned its reputation through experienced crews,
+                quality workmanship, and dependable service. We are family-owned and operated, with
+                multiple generations of the Reedy family working together and a clear focus on getting
+                the work done right.
               </p>
               <div className="section-actions family-split-actions">
                 <Link className="btn btn-outline btn-outline--dark" href="/about">
@@ -264,8 +267,8 @@ export default function Page() {
                 Where We <span className="accent">Work</span>
               </h2>
               <p>
-                Reedy Concrete provides residential, commercial, industrial, and agricultural
-                concrete construction across the Upper Midwest, with a strong presence in:
+                Reedy Concrete provides commercial, industrial, agricultural, and residential
+                concrete construction across the Midwest, serving customers throughout:
               </p>
               <ul className="service-area-locations">
                 {areaHighlights.map((item) => (
@@ -276,8 +279,8 @@ export default function Page() {
                 ))}
               </ul>
               <p className="service-area-note-copy">
-                If you are not sure whether you are in our service area, just ask. We will let you
-                know quickly and clearly what we can do.
+                Based in Galesville, Wisconsin, we serve Wisconsin, Minnesota, and Iowa. Contact us
+                to discuss your project.
               </p>
               <div className="section-actions">
                 <Link className="btn btn-outline btn-outline--dark" href="/contact">
@@ -295,7 +298,7 @@ export default function Page() {
             Let&apos;s Build Something That <span className="accent">Lasts</span>.
           </>
         }
-        copy="Have a concrete project coming up? Talk with Reedy Concrete about your residential, commercial, industrial, or agricultural project."
+        copy="Have a concrete project coming up? Talk with Reedy Concrete about commercial, industrial, agricultural, or residential work."
         imageSrc="/assets/photos/cta-home.jpg"
       />
     </main>

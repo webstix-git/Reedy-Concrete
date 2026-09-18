@@ -12,7 +12,7 @@ export default function Page() {
     <main>
       <PageHero
         title="Blog"
-        description="Field notes from Reedy Concrete-foundations, laser screed flatwork, and family-owned crews serving Wisconsin, Minnesota, and Iowa."
+        description="Field notes from Reedy Concrete - foundations, laser screed flatwork, and family-owned crews serving Wisconsin, Minnesota, and Iowa."
         ariaLabel="Blog"
       />
       
@@ -31,7 +31,7 @@ export default function Page() {
               <div className="blog-cards-head reveal">
                 <p className="section-label">From the Field</p>
                 <h2 className="section-title">Three reads for better pours</h2>
-                <p className="section-intro">Pick an article on laser screed floors, Midwestern foundations, or long-tenure crews - then open the full story.</p>
+                <p className="section-intro">Pick an article on laser screed floors, Midwest foundations, or long-tenure crews - then open the full story.</p>
               </div>
       
               <div className="blog-cards">
@@ -41,8 +41,8 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Commercial &amp; Industrial</span>
-                    <h3>Laser Screed Floors - Protecting Warehouse and Plant Schedules</h3>
-                    <p>On large commercial and industrial slabs, flatness isn't a finish preference - it's a schedule decision...</p>
+                    <h3>Laser Screed Floors - Precision on Commercial and Industrial Work</h3>
+                    <p>Somero Laser Screeds and Trimble Robotic Stations help Reedy Concrete deliver precise flatwork on large-scale projects...</p>
                     <span className="text-link">Read full article <span aria-hidden="true">&rarr;</span></span>
                   </div>
                 </Link>
@@ -53,8 +53,8 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Residential</span>
-                    <h3>Midwest Foundations - What Homeowners Should Expect From the Pour</h3>
-                    <p>Freeze-thaw cycles, clay soils, and tight build schedules make Midwest foundations harder than they look...</p>
+                    <h3>Midwest Foundations - What Clients Should Expect From the Pour</h3>
+                    <p>Reedy Concrete builds solid, dependable foundations with experienced crews and precise layout across Wisconsin, Minnesota, and Iowa...</p>
                     <span className="text-link">Read full article <span aria-hidden="true">&rarr;</span></span>
                   </div>
                 </Link>
@@ -66,7 +66,7 @@ export default function Page() {
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Company</span>
                     <h3>Crew Tenure - Why Long-Term Crews Change the Pour</h3>
-                    <p>Concrete work rewards judgment as much as tools. Meet the family-owned crew behind Reedy Concrete's 40+ years...</p>
+                    <p>Concrete work rewards judgment as much as tools. Meet the family-owned crew behind Reedy Concrete's 50 years...</p>
                     <span className="text-link">Read full article <span aria-hidden="true">&rarr;</span></span>
                   </div>
                 </Link>
@@ -81,7 +81,7 @@ export default function Page() {
             <div className="cta-band-inner reveal">
               <div className="cta-band-copy">
                 <h2 className="section-title">Read the notes. Then put them <span className="break">to <span className="accent">work on your site</span>.</span></h2>
-                <p>If a foundation, warehouse floor, or crew question is on your desk, send the plans or call the shop and we will walk the scope with you.</p>
+                <p>If a foundation, warehouse floor, or crew question is on your desk, send the details or call us and we will walk the scope with you.</p>
               </div>
               <div className="actions">
                 <Link className="btn btn-primary" href="/contact">Request a Quote</Link>

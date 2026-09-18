@@ -3,8 +3,8 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Why Laser Screed Floors Protect Warehouse and Plant Schedules | Reedy Concrete Blog",
-  description: "Why laser screed floors protect warehouse and plant schedules - Somero laser screeds and Trimble layout from Reedy Concrete.",
+  title: "Why Laser Screed Floors Support Commercial and Industrial Precision | Reedy Concrete Blog",
+  description: "How Somero Laser Screeds and Trimble Robotic Stations help Reedy Concrete deliver precise flatwork on commercial, industrial, and warehouse projects.",
 };
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
     <main>
       <PageHero
         title="Blog"
-        description="Why laser screed floors protect warehouse and plant schedules-Somero laser screeds and precise layout from Reedy Concrete."
+        description="How Somero Laser Screeds and Trimble Robotic Stations help Reedy Concrete deliver precise flatwork on commercial, industrial, and warehouse projects."
         ariaLabel="Blog article"
       />
       
@@ -23,7 +23,7 @@ export default function Page() {
                 <span aria-hidden="true">/</span>
                 <Link href="/blog">Blog</Link>
                 <span aria-hidden="true">/</span>
-                <span className="current">Why Laser Screed Floors Protect Warehouse and Plant Schedules</span>
+                <span className="current">Why Laser Screed Floors Support Commercial and Industrial Precision</span>
               </nav>
             </div>
           </div>
@@ -40,29 +40,29 @@ export default function Page() {
                     <time dateTime="2026-03-12">March 12, 2026</time>
                   </p>
                   <div className="prose">
-                    <p>On large commercial and industrial slabs, flatness is not a finish preference - it's a schedule and equipment decision. Uneven floors slow racking installs, create trip hazards, and force expensive corrections after other trades are already on site. When a general contractor's schedule has no slack left in it, a floor that's off by even a quarter inch per ten feet can turn into a week of finger-pointing.</p>
+                    <p>On large commercial, industrial, and warehouse projects, precision is not a finish preference - it is how Reedy Concrete protects quality, schedule, and budget. Delays, costly mistakes, and quality concerns are the problems complex concrete work can create when a contractor cannot meet project specifications. Experienced crews, specialized equipment, and modern technology are how we handle projects of virtually any size while staying on spec and on time.</p>
       
-                    <h2>The Problem With "Good Enough" Flatness</h2>
-                    <p>Standard hand-finished slabs are fine for a lot of jobs. But warehouses with narrow-aisle racking, automated guided vehicles, or high-bay storage need floors that are flat and level within tight, specified tolerances - usually measured with an F-Number system (FF/FL). Miss those numbers and you're looking at:</p>
+                    <h2>The Problem With Unreliable Precision</h2>
+                    <p>Businesses and large-scale project owners need concrete that is dependable the first time. When layout and flatwork are off, the rest of the job pays for it. Reedy Concrete helps customers build strong, durable, and dependable concrete structures without the delays, costly mistakes, or quality concerns that can come with complex concrete projects.</p>
                     <ul>
-                      <li>Racking systems that won't seat correctly, or that rack out of plumb over time</li>
-                      <li>Forklifts and AGVs that can't run at rated speed, slowing down operations for the life of the building</li>
-                      <li>Ponding, drainage issues, and coating failures on the finished floor</li>
-                      <li>Rework that has to happen after other trades - electrical, racking, mezzanines - are already in the building, which is the most expensive time to fix a slab</li>
+                      <li>Project delays when concrete work does not meet specifications</li>
+                      <li>Costly mistakes caused by a lack of precision</li>
+                      <li>Quality concerns on complex or large-scale pours</li>
+                      <li>Unreliable contractors who cannot finish the job on time</li>
                     </ul>
       
-                    <h2>How Reedy Concrete Places High-Tolerance Floors</h2>
-                    <p>Reedy Concrete places high-tolerance warehouse and manufacturing floors with Somero laser screeds. The equipment reads a rotating laser plane and automatically adjusts the screed head in real time, so the crew is placing concrete to a true elevation instead of eyeballing it across a 40,000-square-foot pour.</p>
-                    <p>Before the screed ever touches concrete, layout has to be right. We use Trimble robotic stations to set elevations and control points across the slab, which keeps everything - footings, formwork, screed passes - tied to the same reference across a large pour. That combination is what lets us hold tight FF/FL numbers on big, open floors without slowing the pour down to get there.</p>
+                    <h2>How Reedy Concrete Places Precise Flatwork</h2>
+                    <p>Reedy Concrete uses Somero Laser Screeds to improve precision, efficiency, and workmanship on large-scale flatwork. Before the screed ever touches concrete, layout has to be right. We use Trimble Robotic Stations to support precise layout and measurement on complex pours and critical alignments.</p>
+                    <p>That combination - highly trained crews, Trimble Robotic Stations, and Somero Laser Screeds - is how we deliver the precise flatwork large commercial, industrial, warehouse, and agricultural projects require, while maintaining a strong reputation for reliability and customer service.</p>
       
-                    <h2>What This Means for Your Schedule</h2>
-                    <p>For developers, general contractors, and project managers across Wisconsin, Minnesota, and Iowa, the payoff is straightforward:</p>
+                    <h2>What This Means for Your Project</h2>
+                    <p>For businesses across Wisconsin, Minnesota, and Iowa, the payoff is straightforward:</p>
                     <ul>
-                      <li><strong>Fewer delays.</strong> A flat floor doesn't hold up the racking, conveyor, or equipment installers behind it.</li>
-                      <li><strong>Fewer costly mistakes.</strong> Catching elevation problems before the pour, not after other trades are in, saves real money.</li>
-                      <li><strong>A slab built for the long haul.</strong> High-tolerance floors hold up under daily material handling traffic instead of degrading and needing patchwork years into the building's life.</li>
+                      <li><strong>Fewer delays.</strong> Reliable crews and specialized equipment help keep demanding pours on schedule.</li>
+                      <li><strong>Fewer costly mistakes.</strong> Precise layout and laser-screed flatwork protect quality before problems become expensive.</li>
+                      <li><strong>Work built to last.</strong> Quality workmanship and structural integrity remain the standard, from foundations through finished floors.</li>
                     </ul>
-                    <p>Laser screeds and robotic layout aren't the only things that matter on a floor like this - mix design, joint layout, curing, and an experienced crew still carry most of the weight. But the equipment is what lets that crew execute a tight plan across a slab too big to finish by hand and still hit the tolerance the building actually needs.</p>
+                    <p>Equipment matters. So do the people running it. Many Reedy Concrete team members have been with the company for 10–35+ years, and we build our reputation on three simple promises: reliable service, competitive pricing, and finishing every job on time.</p>
                   </div>
                 </div>
               </article>
@@ -82,8 +82,8 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Residential</span>
-                    <h3>Midwest Foundations - What Homeowners Should Expect From the Pour</h3>
-                    <p>Freeze-thaw cycles, clay soils, and tight build schedules make Midwest foundations harder than they look...</p>
+                    <h3>Midwest Foundations - What Clients Should Expect From the Pour</h3>
+                    <p>Reedy Concrete builds solid, dependable foundations with experienced crews and precise layout across Wisconsin, Minnesota, and Iowa...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>
                 </Link>
@@ -94,7 +94,7 @@ export default function Page() {
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Company</span>
                     <h3>Crew Tenure - Why Long-Term Crews Change the Pour</h3>
-                    <p>Concrete work rewards judgment as much as tools. Meet the family-owned crew behind Reedy Concrete's 40+ years...</p>
+                    <p>Concrete work rewards judgment as much as tools. Meet the family-owned crew behind Reedy Concrete's 50 years...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>
                 </Link>

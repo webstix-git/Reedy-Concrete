@@ -18,7 +18,7 @@ window.REEDY_GALLERY = [
   {
     src: "assets/photos/family.jpg",
     alt: "Crew and residential concrete project",
-    title: "Home Site Work",
+    title: "Residential Project",
     category: "Residential",
   },
   {
@@ -54,7 +54,7 @@ window.REEDY_GALLERY = [
   {
     src: "assets/photos/hero.jpg",
     alt: "Large-scale industrial concrete pour",
-    title: "Plant-Scale Pour",
+    title: "Industrial Pour",
     category: "Industrial",
   },
   {

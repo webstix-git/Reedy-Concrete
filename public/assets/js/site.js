@@ -97,7 +97,7 @@
 function handleSubmit(event) {
   event.preventDefault();
   const form = event.target;
-  alert("Thank you. Your inquiry has been prepared. Please email prentice@reedyconcrete.com or tyler@reedyconcrete.com, or call 608-582-4335 to reach the team.");
+  alert("Thank you. Your inquiry has been prepared. Please email prentice@reedyconcrete.com or tyler@reedyconcrete.com, or call (608) 582-4335 to reach the team.");
   form.reset();
   return false;
 }

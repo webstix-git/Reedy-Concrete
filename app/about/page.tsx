@@ -6,21 +6,21 @@ import ServiceAreaMap from "@/components/ServiceAreaMap";
 import { company } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "About Reedy Concrete | 40+ Years of Concrete Experience",
+  title: "About Reedy Concrete | 50 Years of Concrete Experience",
   description:
-    "Reedy Concrete is a family-owned concrete contractor built on more than 40 years of experience, skilled people, and dependable workmanship.",
+    "Reedy Concrete is a family-owned concrete contractor built on 50 years of experience, skilled people, and dependable workmanship.",
 };
 
 const approachItems = [
   {
     title: "Quality workmanship",
     icon: "/icons/approach-quality.png",
-    copy: "We take pride in work that holds up: sound structure, clean finishes, and concrete you can count on for years.",
+    copy: "We take pride in work that holds up: sound structure, quality workmanship, and concrete you can count on for years.",
   },
   {
     title: "Precision",
     icon: "/icons/approach-precision.png",
-    copy: "Layout, elevations, and finishing stay tight so the work fits the plan and performs the way it should on site.",
+    copy: "Layout, elevations, and finishing stay precise so the work meets project specifications and performs the way it should on site.",
   },
   {
     title: "Reliability",
@@ -48,12 +48,12 @@ const pillars = [
   {
     title: "Family ownership",
     icon: "/icons/team.svg",
-    copy: "The Reedy family still runs the business day to day, with more than one generation working alongside each other.",
+    copy: "The Reedy family remains actively involved, with multiple generations working alongside each other.",
   },
   {
     title: "Long-term crews",
     icon: "/icons/crew.svg",
-    copy: "Many of our people have been here 10-35+ years. That kind of tenure shows up in the quality of the work.",
+    copy: "Many of our people have been here 10–35+ years. That kind of tenure shows up in the quality of the work.",
   },
   {
     title: "Long-term relationships",
@@ -79,7 +79,7 @@ export default function Page() {
     <main>
       <PageHero
         title="About Us"
-        description="A family-owned concrete company with deep Midwest roots, built on dependable work and people who stick around."
+        description="A family-owned concrete company with deep Midwest roots, built on dependable work and people who stay."
         imageSrc="/assets/photos/about-banner.jpg"
         ariaLabel="About Us"
         className="page-hero--banner-about"
@@ -105,13 +105,14 @@ export default function Page() {
               <div className="prose">
                 <p>
                   Reedy Concrete started as a family-owned and operated business with a simple goal:
-                  deliver dependable, high-quality concrete work customers can count on. Over the past
-                  40+ years, we have grown by earning trust, one job, and one relationship, at a time.
+                  deliver dependable, high-quality concrete services customers can count on. Over the
+                  past 50 years, we have grown by building strong relationships and delivering
+                  projects that hold up.
                 </p>
                 <p>
                   Based in Galesville, Wisconsin, we serve customers throughout Wisconsin, Minnesota,
                   and Iowa. The Reedy family remains actively involved, with multiple generations
-                  working together. Many of our crew members have been with us for 10-35+ years, which
+                  working together. Many of our crew members have been with us for 10–35+ years, which
                   says a lot about how we treat our people and our community.
                 </p>
               </div>
@@ -156,17 +157,17 @@ export default function Page() {
                 <span className="accent">Modern precision.</span>
               </h2>
               <p>
-                Decades in the field, paired with modern tools, keep layout and finishing accurate
-                when the job gets demanding.
+                Decades in the field, paired with Trimble Robotic Stations and Somero Laser Screeds,
+                keep layout and finishing accurate when the job gets demanding.
               </p>
               <ul className="tech-list">
                 <li>
                   <strong>Trimble Robotic Stations</strong>
-                  Help with precise layout and measurement where alignment matters.
+                  Improve precise layout and measurement where alignment matters.
                 </li>
                 <li>
                   <strong>Somero Laser Screeds</strong>
-                  Support flatwork and finishing for consistent concrete surfaces.
+                  Support flatwork and finishing for consistent, precise concrete surfaces.
                 </li>
               </ul>
             </div>
@@ -204,8 +205,8 @@ export default function Page() {
                 Where We <span className="accent">Work</span>
               </h2>
               <p>
-                From our shop at {company.addressLines[0]}, {company.addressLines[1]}, we take on
-                work across the Upper Midwest, with a strong presence in:
+                From our Galesville, Wisconsin location at {company.addressLines[0]},{" "}
+                {company.addressLines[1]}, we take on work across the Midwest, serving customers in:
               </p>
               <ul className="service-area-locations">
                 {areaHighlights.map((item) => (
@@ -216,7 +217,7 @@ export default function Page() {
                 ))}
               </ul>
               <p className="service-area-note-copy">
-                Not sure if you are in our area? Ask. We will tell you straight what we can take on.
+                We serve Wisconsin, Minnesota, and Iowa. Contact us to discuss your project.
               </p>
               <div className="section-actions">
                 <a className="btn btn-outline btn-outline--dark" href="/contact">
@@ -236,7 +237,7 @@ export default function Page() {
             your <span className="accent">next</span> pour?
           </>
         }
-        copy="Reach out to discuss residential, commercial, industrial, or agricultural concrete work."
+        copy="Reach out to discuss commercial, industrial, agricultural, or residential concrete work."
         imageSrc="/assets/photos/about-cta.jpg"
       />
     </main>

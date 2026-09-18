@@ -21,7 +21,7 @@ export const REEDY_GALLERY: GalleryItem[] = [
   {
     src: "/assets/photos/family.jpg",
     alt: "Crew and residential concrete project",
-    title: "Home Site Work",
+    title: "Residential Project",
     category: "Residential",
   },
   {
@@ -57,7 +57,7 @@ export const REEDY_GALLERY: GalleryItem[] = [
   {
     src: "/assets/photos/hero.jpg",
     alt: "Large-scale industrial concrete pour",
-    title: "Plant-Scale Pour",
+    title: "Industrial Pour",
     category: "Industrial",
   },
   {

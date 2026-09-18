@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const markets = [
   {
     title: "Foundations and Flatwork",
-    copy: "Foundations and flatwork for large-scale projects.",
+    copy: "Foundations and precise flatwork for large-scale projects, delivered to spec and on time.",
   },
   {
     title: "Commercial",
@@ -25,7 +25,7 @@ const markets = [
   },
   {
     title: "Warehouse",
-    copy: "Concrete construction for warehouse projects.",
+    copy: "Warehouse concrete construction, including precise flatwork placed with Somero Laser Screeds.",
   },
   {
     title: "Agricultural",
@@ -33,34 +33,34 @@ const markets = [
   },
   {
     title: "Multi-Tenant",
-    copy: "Concrete construction for multi-tenant projects.",
+    copy: "Concrete construction for multi-tenant projects, from foundations through finished flatwork.",
   },
   {
     title: "Underground Parking",
-    copy: "Concrete construction for underground parking projects.",
+    copy: "Concrete construction for underground parking, where precision and structural integrity matter.",
   },
 ];
 
 const reasons = [
   {
-    title: "40+ years of experience",
+    title: "50 years of experience",
     icon: "/icons/why-experience.svg",
-    copy: "More than four decades of commercial, industrial, and agricultural concrete work across the Upper Midwest.",
+    copy: "Fifty years of commercial, industrial, and agricultural concrete work across Wisconsin, Minnesota, and Iowa.",
   },
   {
     title: "Experienced long-term crews",
     icon: "/icons/crew.svg",
-    copy: "Highly trained employees, many with 10-35+ years on the job, who keep complex pours accurate and on schedule.",
+    copy: "Highly trained employees, many with 10–35+ years on the job, who keep complex pours accurate and on schedule.",
   },
   {
     title: "Modern equipment",
     icon: "/icons/equipment.svg",
-    copy: "Trimble layout and Somero screeding support precision on demanding commercial and industrial pours.",
+    copy: "Trimble Robotic Stations and Somero Laser Screeds support precision on demanding commercial and industrial pours.",
   },
   {
     title: "Quality workmanship",
     icon: "/icons/quality-batch.svg",
-    copy: "Tight tolerances, clean finishes, and work that holds up when mistakes would cost everyone.",
+    copy: "Quality workmanship and structural integrity when mistakes would cost everyone time and money.",
   },
   {
     title: "Reliable project execution",
@@ -70,28 +70,28 @@ const reasons = [
   {
     title: "Competitive pricing",
     icon: "/icons/money-bag.svg",
-    copy: "Straightforward pricing and careful job planning so projects stay within budget without cutting corners.",
+    copy: "Competitive pricing and careful job planning so projects stay on budget without cutting corners.",
   },
 ];
 
 const recentWorks = [
   {
-    name: "Reedsburg Public Works",
-    work: "Walls and slab on grade",
+    name: "Commercial Foundations",
+    work: "Large-scale concrete construction",
     image: "/assets/photos/comm-work-1.jpg",
     alt: "Commercial wall forms and crane on a large concrete jobsite",
   },
   {
-    name: "Kwik Trip, Combined Locks",
-    work: "Fuel canopy apron and lot",
+    name: "Commercial Flatwork",
+    work: "Precise finishing on site",
     image: "/assets/Commercial/Kwik-Trip-Combined-Locks-2-500x500.jpg",
-    alt: "Kwik Trip Combined Locks canopy and lot",
+    alt: "Commercial concrete flatwork and site finishing",
   },
   {
-    name: "Richland Center Aquatic Center",
-    work: "Pool decks and walkways",
+    name: "Commercial Concrete",
+    work: "Quality workmanship at scale",
     image: "/assets/photos/comm-work-3.jpg",
-    alt: "Commercial pool deck and flatwork",
+    alt: "Commercial concrete flatwork",
   },
 ];
 
@@ -160,7 +160,7 @@ export default function Page() {
           </ol>
           <div className="section-actions job-runs-actions">
             <Link className="text-link job-runs-link" href="/contact">
-              <span>Request a Free Quote</span>
+              <span>Request a Quote</span>
               <svg className="job-runs-link-arrow" viewBox="0 0 16 16" aria-hidden="true" width="14" height="14">
                 <path
                   fill="currentColor"
@@ -174,7 +174,7 @@ export default function Page() {
 
       <section className="about-pillars res-why-pillars" aria-labelledby="comm-why-title">
         <div className="wrap">
-          <p className="section-label reveal">Why Project Managers Choose Reedy</p>
+          <p className="section-label reveal">Why Businesses Choose Reedy</p>
           <h2 id="comm-why-title" className="section-title reveal">
             Experience, precision, and <span className="accent">reliable</span> execution
           </h2>
@@ -200,8 +200,8 @@ export default function Page() {
                 <span className="accent">pours</span>
               </h2>
               <p>
-                Modern equipment keeps layout and flatwork precise on complex commercial,
-                industrial, and agricultural projects.
+                Trimble Robotic Stations and Somero Laser Screeds keep layout and flatwork precise
+                on complex commercial, industrial, and agricultural projects.
               </p>
               <ul className="tech-list">
                 <li>
@@ -210,7 +210,7 @@ export default function Page() {
                 </li>
                 <li>
                   <strong>Somero Laser Screeds</strong>
-                  Support precision flatwork and finishing where surface consistency matters.
+                  Support precise flatwork and finishing where surface consistency matters.
                 </li>
               </ul>
             </div>

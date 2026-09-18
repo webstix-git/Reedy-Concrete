@@ -3,8 +3,8 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "What Midwestern Homeowners Should Expect From a Foundation Pour | Reedy Concrete Blog",
-  description: "What Midwestern homeowners should expect from a foundation pour - careful layout and durable results from Reedy Concrete.",
+  title: "What Midwest Clients Should Expect From a Foundation Pour | Reedy Concrete Blog",
+  description: "What clients should expect from a foundation pour - careful layout, experienced crews, and dependable results from Reedy Concrete.",
 };
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
     <main>
       <PageHero
         title="Blog"
-        description="What Midwestern homeowners should expect from a foundation pour-careful layout, experienced crews, and durable results from Reedy Concrete."
+        description="What Midwest clients should expect from a foundation pour - careful layout, experienced crews, and dependable results from Reedy Concrete."
         ariaLabel="Blog article"
       />
       
@@ -23,7 +23,7 @@ export default function Page() {
                 <span aria-hidden="true">/</span>
                 <Link href="/blog">Blog</Link>
                 <span aria-hidden="true">/</span>
-                <span className="current">What Midwestern Homeowners Should Expect From a Foundation Pour</span>
+                <span className="current">What Midwest Clients Should Expect From a Foundation Pour</span>
               </nav>
             </div>
           </div>
@@ -40,28 +40,28 @@ export default function Page() {
                     <time dateTime="2026-02-18">February 18, 2026</time>
                   </p>
                   <div className="prose">
-                    <p>Freeze-thaw cycles, clay soils, and tight build schedules put real pressure on residential foundations in this region. Homeowners and builders across Wisconsin, Minnesota, and Iowa need walls and footings that are square, level, and planned around the rest of the job - not rushed into place because a crew is behind schedule.</p>
+                    <p>Reedy Concrete helps customers build strong, durable, and dependable concrete structures without the delays, costly mistakes, or quality concerns that can come with complex concrete projects. Foundations are a core part of that work, whether the project is residential, commercial, industrial, or agricultural.</p>
       
-                    <h2>Why Foundations Are Harder Here Than People Think</h2>
-                    <p>A foundation poured in the upper Midwest has to deal with things a lot of national "how to pour a foundation" guides don't cover well:</p>
+                    <h2>Why Foundation Work Demands Experienced Crews</h2>
+                    <p>A foundation has to meet project specifications and stay on schedule. That takes more than a crew that can place concrete. It takes people who know how to protect quality on demanding jobs:</p>
                     <ul>
-                      <li><strong>Frost depth.</strong> Footings have to sit below the frost line, or seasonal heaving can crack walls and slabs over time.</li>
-                      <li><strong>Clay and expansive soils.</strong> Soil that swells when wet and shrinks when dry puts uneven pressure on foundation walls if drainage and backfill aren't handled correctly.</li>
-                      <li><strong>A short pour season.</strong> Cold-weather concrete work is possible, but it requires the right mix, admixtures, and curing protection - cutting corners here shows up as cracking and spalling years later.</li>
+                      <li><strong>Precision.</strong> Layout and placement have to be accurate before concrete goes in, not corrected after.</li>
+                      <li><strong>Reliability.</strong> Customers need a contractor who shows up ready and finishes the job on time.</li>
+                      <li><strong>Capacity.</strong> Large-scale and demanding projects need crews and equipment that can handle the work efficiently.</li>
                     </ul>
       
                     <h2>What a Careful Pour Looks Like</h2>
-                    <p>At Reedy Concrete, foundation work starts with careful layout and experienced crews. We use high-tech layout tools to mark elevations and corners accurately before any concrete is placed, which cuts down on the kind of mistakes that are hard and expensive to fix once forms are up or backfill is in. That same discipline carries through into flatwork, driveways, and the rest of the residential structure.</p>
-                    <p>A few things homeowners should expect from a foundation crew that's doing it right:</p>
+                    <p>At Reedy Concrete, foundation work starts with careful layout and experienced crews. We use Trimble Robotic Stations to support precise layout and measurement before concrete is placed, which cuts down on the kind of mistakes that are hard and expensive to fix later. That same discipline carries through into precise flatwork.</p>
+                    <p>A few things clients should expect from a foundation crew that is doing it right:</p>
                     <ol>
-                      <li><strong>A real layout process</strong> - not just string lines eyeballed off a print, but verified corners and elevations before forms go up.</li>
-                      <li><strong>Forms that are checked for square and plumb</strong> before the pour, not adjusted after.</li>
-                      <li><strong>A finish and cure plan appropriate for the weather</strong> - concrete poured in April behaves differently than concrete poured in October, and the crew should be planning for that, not hoping for good luck.</li>
-                      <li><strong>Clear communication about schedule</strong> - when the pour is happening, when forms come off, and when the site is ready for the next trade.</li>
+                      <li><strong>A real layout process</strong> - verified with modern technology, including Trimble Robotic Stations, before the pour.</li>
+                      <li><strong>Quality workmanship</strong> - structural integrity and a finish that holds up, not work that only looks complete on pour day.</li>
+                      <li><strong>Reliable communication</strong> - a clear plan for when the work happens and how it stays on schedule.</li>
+                      <li><strong>On-time completion</strong> - one of three promises we build our reputation on, alongside reliable service and competitive pricing.</li>
                     </ol>
       
                     <h2>Ask the Right Questions Before You Sign</h2>
-                    <p>Whether you're building in Wisconsin, Minnesota, or Iowa, ask any foundation contractor for a clear scope, a real schedule, and a crew that treats the pour under your home like the investment it is. A foundation is the one part of the house nobody sees once it's finished - which is exactly why it deserves the most scrutiny while it's being built.</p>
+                    <p>Whether you are building in Wisconsin, Minnesota, or Iowa, ask any foundation contractor for a clear scope, a real schedule, and a crew that treats the work like it has to last. Reedy Concrete is a family-owned and operated contractor based in Galesville, Wisconsin, with 50 years in the industry, highly trained crews, and multiple generations of the Reedy family still involved in the business.</p>
                   </div>
                 </div>
               </article>
@@ -81,8 +81,8 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Commercial &amp; Industrial</span>
-                    <h3>Laser Screed Floors - Protecting Warehouse and Plant Schedules</h3>
-                    <p>On large commercial and industrial slabs, flatness isn't a finish preference - it's a schedule decision...</p>
+                    <h3>Laser Screed Floors - Precision on Commercial and Industrial Work</h3>
+                    <p>Somero Laser Screeds and Trimble Robotic Stations help Reedy Concrete deliver precise flatwork on large-scale projects...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>
                 </Link>
@@ -93,7 +93,7 @@ export default function Page() {
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Company</span>
                     <h3>Crew Tenure - Why Long-Term Crews Change the Pour</h3>
-                    <p>Concrete work rewards judgment as much as tools. Meet the family-owned crew behind Reedy Concrete's 40+ years...</p>
+                    <p>Concrete work rewards judgment as much as tools. Meet the family-owned crew behind Reedy Concrete's 50 years...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>
                 </Link>

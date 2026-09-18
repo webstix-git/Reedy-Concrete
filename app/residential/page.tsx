@@ -7,79 +7,79 @@ import PageHero from "@/components/PageHero";
 export const metadata: Metadata = {
   title: "Residential Concrete Services | Reedy Concrete",
   description:
-    "Dependable residential concrete construction from Reedy Concrete-foundations, flatwork, driveways, and residential concrete structures.",
+    "Dependable residential concrete construction from Reedy Concrete - foundations and precise flatwork across Wisconsin, Minnesota, and Iowa.",
 };
 
 const services = [
   {
     title: "Concrete Foundations",
-    copy: "Solid, precise foundations that set residential structures up for long-term performance.",
+    copy: "Solid, dependable foundations that set residential projects up for long-term performance.",
   },
   {
     title: "Flatwork",
-    copy: "Residential flatwork finished with care and modern screeding for clean, durable surfaces.",
+    copy: "Residential flatwork finished with care and Somero Laser Screeds for clean, durable surfaces.",
   },
   {
-    title: "Driveways",
-    copy: "Residential driveways built for everyday use and Midwestern conditions.",
+    title: "Precision Layout",
+    copy: "Trimble Robotic Stations support accurate layout so residential pours meet project specifications.",
   },
   {
-    title: "Residential Concrete Structures",
-    copy: "Supporting residential concrete structures completed with the same focus on quality and dependable execution.",
+    title: "On-Time Completion",
+    copy: "Reliable service and a clear commitment to finishing every residential job on time.",
   },
 ];
 
 const reasons = [
   {
-    title: "40+ years of experience",
+    title: "50 years of experience",
     icon: "/icons/why-experience.svg",
-    copy: "More than four decades of residential concrete work across foundations, flatwork, driveways, and structures.",
+    copy: "Fifty years of concrete construction, including residential foundations and precise flatwork.",
   },
   {
     title: "Family-owned company",
     icon: "/icons/team.svg",
-    copy: "A multi-generational business that treats every homeowner project with care and accountability.",
+    copy: "A multi-generational, family-owned business that treats every project with care and accountability.",
   },
   {
     title: "Experienced long-term crews",
     icon: "/icons/crew.svg",
-    copy: "Highly trained employees, many with 10-35+ years on the job, who keep pours consistent and clean.",
+    copy: "Highly trained employees, many with 10–35+ years on the job, who keep pours consistent and dependable.",
   },
   {
     title: "Modern equipment",
     icon: "/icons/equipment.svg",
-    copy: "Trimble layout and Somero screeding support accuracy on residential pours that need to look right and last.",
+    copy: "Trimble Robotic Stations and Somero Laser Screeds support accuracy on residential pours that need to last.",
   },
   {
     title: "Quality workmanship",
     icon: "/icons/quality-batch.svg",
-    copy: "Square, level, and finished to a standard homeowners can see and trust for years after the pour.",
+    copy: "Quality workmanship and structural integrity you can trust long after the pour is complete.",
   },
   {
     title: "Reliable project execution",
     icon: "/icons/why-project.svg",
-    copy: "Clear communication and steady scheduling so residential work moves forward without surprises.",
+    copy: "Clear communication and reliable scheduling so residential work moves forward without delays.",
   },
 ];
 
 const recentWorks = [
   {
-    name: "Farnam Flats, La Crosse",
+    name: "Residential Foundations",
     work: "Foundations and flatwork",
     image: "/assets/photos/res-work-1.jpg",
     alt: "Freshly poured concrete slab with pump boom on site",
   },
   {
-    name: "Tri-State Foundations",
-    work: "Footings and basement walls",
+    name: "Residential Flatwork",
+    work: "Precise concrete finishing",
     image: "/assets/photos/res-work-2.jpg",
     alt: "Large concrete floor pour in progress",
   },
   {
-    name: "Driveways & Flatwork",
-    work: "Patios, walks, and approaches",
+    name: "Residential Concrete",
+    work: "Quality workmanship on site",
     image: "/assets/photos/res-work-3.jpg",
-    alt: "Residential stamped patio and concrete driveway",
+    alt: "Residential concrete flatwork",
   },
 ];
 
@@ -88,7 +88,7 @@ export default function Page() {
     <main>
       <PageHero
         title="Residential"
-        description="Dependable residential concrete-foundations, flatwork, driveways, and structures-backed by decades of experience and highly trained crews."
+        description="Dependable residential concrete - foundations and precise flatwork backed by 50 years of experience and highly trained crews."
         imageSrc="/assets/photos/residential.jpg"
         ariaLabel="Residential Services"
         className="page-hero--banner-service"
@@ -109,12 +109,12 @@ export default function Page() {
             <div className="job-runs-copy reveal">
               <p className="section-label">Residential</p>
               <h2 id="res-intro-title" className="section-title">
-                Concrete work <span className="accent">homeowners</span> can count on
+                Concrete work <span className="accent">clients</span> can count on
               </h2>
               <p className="job-runs-lead">
-                Reedy works with homeowners on residential concrete projects where quality,
-                communication, and dependable execution matter-from foundations and flatwork to
-                driveways and residential concrete structures.
+                Reedy Concrete provides residential concrete construction where quality,
+                communication, and dependable execution matter - from solid foundations to precise
+                flatwork, completed on time.
               </p>
             </div>
           </div>
@@ -133,9 +133,9 @@ export default function Page() {
         <div className="job-runs-copy reveal">
           <p className="section-label">Residential Services</p>
           <h2 id="res-services-title" className="section-title">
-            Foundations, Flatwork,
+            Foundations &amp; Flatwork
             <br />
-            Driveways &amp; <span className="accent">Structures</span>
+            Done with <span className="accent">Precision</span>
           </h2>
           <ol className="job-runs-list">
             {services.map((service) => (
@@ -147,7 +147,7 @@ export default function Page() {
           </ol>
           <div className="section-actions job-runs-actions">
             <Link className="text-link job-runs-link" href="/contact">
-              <span>Request a Free Quote</span>
+              <span>Request a Quote</span>
               <svg className="job-runs-link-arrow" viewBox="0 0 16 16" aria-hidden="true" width="14" height="14">
                 <path
                   fill="currentColor"
@@ -161,7 +161,7 @@ export default function Page() {
 
       <section className="about-pillars res-why-pillars" aria-labelledby="res-why-title">
         <div className="wrap">
-          <p className="section-label reveal">Why Homeowners Choose Reedy</p>
+          <p className="section-label reveal">Why Clients Choose Reedy</p>
           <h2 id="res-why-title" className="section-title reveal">
             Experience, care, and <span className="accent">reliable</span> execution
           </h2>
@@ -188,7 +188,7 @@ export default function Page() {
               </h2>
               <p>
                 Modern equipment supports accuracy and consistency on residential pours, paired
-                with crews who know how to use it.
+                with highly trained crews who know how to use it.
               </p>
               <ul className="tech-list">
                 <li>
@@ -197,7 +197,7 @@ export default function Page() {
                 </li>
                 <li>
                   <strong>Somero Laser Screeds</strong>
-                  Support precision flatwork and finishing for level, durable surfaces.
+                  Support precise flatwork and finishing for level, durable surfaces.
                 </li>
               </ul>
             </div>

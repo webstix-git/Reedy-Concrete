@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <LegalPage title="Privacy Policy" subtitle="How Reedy Concrete handles information shared through this website.">
       <p>
-        This Privacy Policy describes how {company.legalName} (“Reedy Concrete,” “we,” “us”) handles
+        This Privacy Policy describes how {company.name} (“we,” “us”) handles
         information collected through this website and related inquiry channels.
       </p>
 

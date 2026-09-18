@@ -24,10 +24,10 @@ export default function Page() {
           <Link href="/residential">Flatwork</Link>
         </li>
         <li>
-          <Link href="/residential">Driveways</Link>
+          <Link href="/residential">Precision layout</Link>
         </li>
         <li>
-          <Link href="/residential">Residential concrete structures</Link>
+          <Link href="/residential">Residential concrete construction</Link>
         </li>
       </ul>
 

@@ -40,23 +40,23 @@ export default function Page() {
                     <time dateTime="2026-01-22">January 22, 2026</time>
                   </p>
                   <div className="prose">
-                    <p>Concrete work rewards judgment as much as it rewards tools. Crews who have poured together for a decade or more know how weather, mix, and site access affect the day - and how to keep quality controlled when a schedule gets tight. That kind of judgment doesn't come from a manual. It comes from having seen the same problems before, more than once, on real jobs.</p>
+                    <p>Concrete work rewards judgment as much as it rewards tools. Crews who have poured together for a decade or more know how to keep quality controlled when a schedule gets tight. That kind of judgment does not come from a manual. It comes from having seen the same problems before, more than once, on real jobs.</p>
       
                     <h2>What Long Tenure Actually Buys You</h2>
-                    <p>A crew that's been together for years builds up things a newly assembled team simply hasn't had time to develop:</p>
+                    <p>A crew that has been together for years builds up things a newly assembled team simply has not had time to develop:</p>
                     <ul>
-                      <li><strong>Weather instincts.</strong> Knowing when a hot, windy afternoon means you need to adjust set time or finishing schedule - before it becomes a problem, not after.</li>
-                      <li><strong>Fewer surprises on site.</strong> Experienced crews communicate in shorthand, catch issues early, and don't need constant supervision to stay on plan.</li>
-                      <li><strong>Consistency across projects.</strong> The same people who poured your neighbor's basement last year are the ones on your job this year - which means the standard doesn't reset with every new hire.</li>
-                      <li><strong>Better judgment under pressure.</strong> When a schedule gets tight, an experienced crew knows where quality can't be compromised, and where there's real flexibility.</li>
+                      <li><strong>Fewer surprises on site.</strong> Experienced crews communicate clearly, catch issues early, and stay on plan.</li>
+                      <li><strong>Consistency across projects.</strong> Many Reedy Concrete team members have been with the company for 10–35+ years, so the standard does not reset with every new hire.</li>
+                      <li><strong>Better judgment under pressure.</strong> When a schedule gets tight, an experienced crew knows where quality cannot be compromised.</li>
+                      <li><strong>Reliable delivery.</strong> Long-term people help us finish every job on time without sacrificing workmanship.</li>
                     </ul>
       
                     <h2>A Family-Owned Company Built Around This</h2>
-                    <p>Reedy Concrete is a multi-generational, family-owned contractor based in Galesville, Wisconsin. For more than 40 years, we have built the company around long-term employees, many with 10-35+ years of tenure. That continuity shows up in communication on site, fewer surprises for project partners, and finishes that hold up under Midwestern conditions, from basement walls to large industrial floors.</p>
-                    <p>It's easy for a company to talk about experience. What actually matters is whether that experience is still on the crew when your job gets poured. At Reedy, it usually is.</p>
+                    <p>Reedy Concrete is a multi-generational, family-owned contractor based in Galesville, Wisconsin. For 50 years, we have built the company around long-term employees, many with 10–35+ years of tenure. That continuity shows up in communication on site, fewer surprises for project partners, and work customers can count on across Wisconsin, Minnesota, and Iowa.</p>
+                    <p>It is easy for a company to talk about experience. What actually matters is whether that experience is still on the crew when your job gets poured. At Reedy, it usually is.</p>
       
                     <h2>What This Means for You</h2>
-                    <p>When you send us plans or call the shop, you're talking with a team that treats reliability as part of the product - not an add-on, and not marketing language. Whether it's a residential basement, a commercial slab, or a high-tolerance industrial floor, the people showing up to do the work are the same people who've been doing it here for years.</p>
+                    <p>When you call or send project details, you are talking with a team that treats reliability as part of the product - not an add-on, and not marketing language. Whether it is residential, commercial, industrial, or agricultural concrete work, the people showing up to do the work are the same people who have been doing it here for years.</p>
                   </div>
                 </div>
               </article>
@@ -76,8 +76,8 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Commercial &amp; Industrial</span>
-                    <h3>Laser Screed Floors - Protecting Warehouse and Plant Schedules</h3>
-                    <p>On large commercial and industrial slabs, flatness isn't a finish preference - it's a schedule decision...</p>
+                    <h3>Laser Screed Floors - Precision on Commercial and Industrial Work</h3>
+                    <p>Somero Laser Screeds and Trimble Robotic Stations help Reedy Concrete deliver precise flatwork on large-scale projects...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>
                 </Link>
@@ -87,8 +87,8 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Residential</span>
-                    <h3>Midwest Foundations - What Homeowners Should Expect From the Pour</h3>
-                    <p>Freeze-thaw cycles, clay soils, and tight build schedules make Midwest foundations harder than they look...</p>
+                    <h3>Midwest Foundations - What Clients Should Expect From the Pour</h3>
+                    <p>Reedy Concrete builds solid, dependable foundations with experienced crews and precise layout across Wisconsin, Minnesota, and Iowa...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>
                 </Link>
