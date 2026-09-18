@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CtaBand from "@/components/CtaBand";
 import HomeGallery from "@/components/HomeGallery";
-import ServiceAreaMap from "@/components/ServiceAreaMap";
+import ServiceAreaSection from "@/components/ServiceAreaSection";
 
 export const metadata: Metadata = {
   title: "Reedy Concrete | Concrete Construction in WI, MN & IA",
@@ -26,18 +26,6 @@ const showcaseImages = [
   { src: "/assets/photos/res-work-1.jpg", alt: "Residential concrete foundation walls" },
   { src: "/assets/photos/comm-work-1.jpg", alt: "Commercial concrete project in progress" },
   { src: "/assets/photos/what-2.jpg", alt: "Concrete slab and formwork on site" },
-];
-
-const areaHighlights = [
-  { name: "Wisconsin", label: "Wisconsin" },
-  { name: "Minnesota", label: "Minnesota" },
-  { name: "Iowa", label: "Iowa" },
-];
-
-const areaMapPins = [
-  { name: "Minnesota", top: "32%", left: "34%" },
-  { name: "Wisconsin", top: "42%", left: "70%" },
-  { name: "Iowa", top: "78%", left: "40%" },
 ];
 
 export default function Page() {
@@ -303,42 +291,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="service-area-section service-area-section--split" id="service-area" aria-labelledby="area-title">
-        <div className="wrap">
-          <div className="service-area-split reveal">
-            <ServiceAreaMap pins={areaMapPins} />
-            <div className="service-area-copy">
-              <p className="section-label">
-                <span className="accent">Service Area</span>
-              </p>
-              <h2 id="area-title" className="section-title">
-                Where We <span className="accent">Work</span>
-              </h2>
-              <p>
-                Reedy Concrete provides commercial, industrial, agricultural, and residential
-                concrete construction across the Midwest, serving customers throughout:
-              </p>
-              <ul className="service-area-locations">
-                {areaHighlights.map((item) => (
-                  <li key={item.name}>
-                    <img src="/assets/icon-location-pin.svg" alt="" width={20} height={20} />
-                    <strong>{item.label}</strong>
-                  </li>
-                ))}
-              </ul>
-              <p className="service-area-note-copy">
-                Based in Galesville, Wisconsin, we serve Wisconsin, Minnesota, and Iowa. Contact us
-                to discuss your project.
-              </p>
-              <div className="section-actions">
-                <Link className="btn btn-outline btn-outline--dark" href="/contact">
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServiceAreaSection id="service-area" />
 
       <CtaBand
         title={

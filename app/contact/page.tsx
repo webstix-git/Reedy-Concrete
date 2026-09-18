@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import ContactForm from "@/components/ContactForm";
 import PageHero from "@/components/PageHero";
+import ServiceAreaSection from "@/components/ServiceAreaSection";
 import { company } from "@/lib/company";
 
 export const metadata: Metadata = {
@@ -82,6 +83,13 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <ServiceAreaSection
+        className="service-area-section--white"
+        titleId="contact-area-title"
+        showAddress
+        showCta={false}
+      />
     </main>
   );
 }

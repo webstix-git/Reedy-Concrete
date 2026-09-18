@@ -3,6 +3,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import CtaBand from "@/components/CtaBand";
 import PageHero from "@/components/PageHero";
+import ServiceAreaSection from "@/components/ServiceAreaSection";
 
 export const metadata: Metadata = {
   title: "Commercial Services | Reedy Concrete",
@@ -247,6 +248,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <ServiceAreaSection titleId="commercial-area-title" />
 
       <CtaBand
         title={
