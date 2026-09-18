@@ -5,9 +5,9 @@ import CtaBand from "@/components/CtaBand";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Commercial, Industrial & Agricultural Concrete | Reedy Concrete",
+  title: "Commercial Services | Reedy Concrete",
   description:
-    "Reedy Concrete provides concrete construction for commercial, industrial, and agricultural projects throughout Wisconsin, Minnesota, and Iowa.",
+    "Reedy Concrete provides foundations and flatwork for large-scale commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking projects throughout Wisconsin, Minnesota, and Iowa.",
 };
 
 const markets = [
@@ -99,13 +99,13 @@ export default function Page() {
   return (
     <main>
       <PageHero
-        title="Commercial"
-        description="Concrete construction for commercial, industrial, and agricultural projects across Wisconsin, Minnesota, and Iowa, built for schedule, quality, and scale."
+        title="Commercial Services"
+        description="Foundations and precise flatwork for large-scale commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking projects across Wisconsin, Minnesota, and Iowa."
         imageSrc="/assets/photos/commercial-foundation-pump.jpg"
         ariaLabel="Commercial Services"
         className="page-hero--banner-service"
       />
-      <Breadcrumb current="Commercial" />
+      <Breadcrumb current="Commercial Services" />
 
       <section className="job-runs-section job-runs-section--contained" aria-labelledby="comm-intro-title">
         <div className="wrap">
@@ -119,15 +119,15 @@ export default function Page() {
               />
             </div>
             <div className="job-runs-copy reveal">
-              <p className="section-label">Commercial Focus</p>
+              <p className="section-label">Commercial Services</p>
               <h2 id="comm-intro-title" className="section-title">
                 Built for projects where mistakes are <span className="accent">expensive</span>
               </h2>
               <p className="job-runs-lead">
-                Commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking
-                work all need the same thing: crews who protect quality and keep the job moving.
-                That is where Reedy focuses: foundations and flatwork for large-scale projects done
-                right the first time.
+                Reedy Concrete specializes in foundations and precise flatwork for large-scale
+                projects. Commercial, industrial, warehouse, agricultural, multi-tenant, and
+                underground parking work all need crews who protect quality, meet specifications, and
+                finish on time.
               </p>
             </div>
           </div>
@@ -137,8 +137,8 @@ export default function Page() {
       <section className="job-runs" aria-labelledby="comm-markets-title">
         <div className="job-runs-media reveal">
           <img
-            src="/assets/photos/agricultural-silos-slab.jpg"
-            alt="Agricultural concrete slab with grain silos and elevator"
+            src="/assets/photos/agricultural.jpg"
+            alt="Agricultural concrete foundation walls on a jobsite"
             width={1400}
             height={933}
           />
@@ -254,7 +254,7 @@ export default function Page() {
             Have a <span className="accent">Project</span> Coming Up?
           </>
         }
-        copy="Talk with Reedy Concrete about your commercial, industrial, or agricultural concrete project."
+        copy="Talk with Reedy Concrete about your commercial, industrial, warehouse, agricultural, multi-tenant, or underground parking project."
         imageSrc="/assets/photos/comm-cta.jpg"
       />
     </main>

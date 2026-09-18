@@ -5,22 +5,22 @@ import PageHero from "@/components/PageHero";
 import { company } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "Contact Reedy Concrete | Request a Quote",
+  title: "Contact Us | Reedy Concrete",
   description:
-    "Contact Reedy Concrete to discuss your commercial, industrial, agricultural, or residential concrete project.",
+    "Contact Reedy Concrete to discuss commercial, industrial, agricultural, or residential concrete construction across Wisconsin, Minnesota, and Iowa.",
 };
 
 export default function Page() {
   return (
     <main>
       <PageHero
-        title="Contact"
-        description="Talk with Reedy Concrete about your commercial, industrial, agricultural, or residential project. Call, email, or send a project inquiry."
+        title="Contact Us"
+        description="Talk with Reedy Concrete about your next project. Call, email, or send a project inquiry."
         imageSrc="/assets/photos/contact-banner.jpg"
-        ariaLabel="Contact"
+        ariaLabel="Contact Us"
         className="page-hero--banner-contact"
       />
-      <Breadcrumb current="Contact" className="breadcrumb-strip--contact" />
+      <Breadcrumb current="Contact Us" className="breadcrumb-strip--contact" />
 
       <section className="contact-page">
         <div className="wrap">

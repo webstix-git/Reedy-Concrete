@@ -85,7 +85,7 @@ export default function Page() {
               </div>
               <div className="actions">
                 <Link className="btn btn-primary" href="/contact">Request a Quote</Link>
-                <Link className="btn btn-outline" href="/residential">Our services</Link>
+                <Link className="btn btn-outline" href="/services">Our services</Link>
               </div>
             </div>
           </section>

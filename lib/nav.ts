@@ -6,9 +6,9 @@ export type NavLink = {
 export const primaryNav: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
-  { href: "/residential", label: "Residential" },
-  { href: "/commercial", label: "Commercial" },
-  { href: "/contact", label: "Contact" },
+  { href: "/services", label: "Services" },
+  { href: "/commercial", label: "Commercial Services" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export const footerMenu: NavLink[] = [...primaryNav];

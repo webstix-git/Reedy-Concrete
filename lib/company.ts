@@ -14,13 +14,13 @@ export const company = {
 } as const;
 
 export const footerServices = [
-  { href: "/residential", label: "Residential" },
-  { href: "/commercial", label: "Commercial" },
-  { href: "/commercial", label: "Foundations and Flatwork" },
-  { href: "/commercial", label: "Industrial and Warehouse" },
-  { href: "/commercial", label: "Agricultural" },
-  { href: "/commercial", label: "Multi-Tenant" },
-  { href: "/commercial", label: "Underground Parking" },
+  { href: "/services", label: "Services" },
+  { href: "/services#foundations-and-flatwork", label: "Foundations and Flatwork" },
+  { href: "/services#commercial", label: "Commercial" },
+  { href: "/services#industrial-and-warehouse", label: "Industrial and Warehouse" },
+  { href: "/services#agricultural", label: "Agricultural" },
+  { href: "/services#multi-tenant", label: "Multi-Tenant" },
+  { href: "/services#underground-parking", label: "Underground Parking" },
 ] as const;
 
 export const footerLegal = [

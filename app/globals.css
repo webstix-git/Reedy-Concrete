@@ -5375,7 +5375,7 @@ h3 {
 .header-phone {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 18px;
   letter-spacing: 0.04em;
   color: rgb(255 255 255 / 0.92);
   white-space: nowrap;
@@ -5739,7 +5739,7 @@ h3 {
   }
 
   .header-phone {
-    font-size: 0.85rem;
+    font-size: 18px;
   }
 
   .nav-links .header-phone--nav {
@@ -8858,6 +8858,39 @@ section.about-approach {
 .job-runs-section--contained + .job-runs,
 .job-runs-section--contained + section.job-runs {
   margin-top: 3.5rem;
+}
+
+.services-detail-stack {
+  display: grid;
+  gap: 3.5rem;
+}
+
+.services-detail-stack .job-runs {
+  scroll-margin-top: 6.5rem;
+}
+
+.job-runs--light .job-runs-link.text-link:hover {
+  color: #111 !important;
+}
+
+.services-index .about-pillar a {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.services-index .about-pillar a:hover h3,
+.services-index .about-pillar a:focus-visible h3 {
+  color: var(--red);
+}
+
+.services-bands .job-runs--light + .job-runs {
+  margin-top: 0;
+}
+
+.services-bands .job-runs {
+  scroll-margin-top: 6.5rem;
 }
 
 @media (max-width: 900px) {

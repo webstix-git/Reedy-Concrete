@@ -62,7 +62,7 @@ export default function Page() {
               Minnesota, and Iowa.
             </p>
             <div className="hero-actions hero-actions--single">
-              <a className="btn btn-outline hero-btn-outline" href="#services">
+              <a className="btn btn-outline hero-btn-outline" href="/services">
                 View Our Services
               </a>
             </div>
@@ -77,56 +77,104 @@ export default function Page() {
             One standard, every <span className="accent">sector</span>
           </h2>
           <p className="section-intro reveal">
-            Every job runs through the same experienced crews, specialized equipment, and commitment
-            to quality - from residential work to large-scale commercial, industrial, and agricultural
-            projects.
+            We specialize in foundations and precise flatwork for large-scale projects across
+            commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking
+            work.
           </p>
           <div className="pour-grid">
-            <Link className="pour-card reveal" href="/residential">
+            <Link className="pour-card reveal" href="/services#foundations-and-flatwork">
               <img
-                src="/assets/photos/residential.jpg"
-                alt="Residential foundation concrete work"
+                src="/assets/photos/commercial-foundation-pump.jpg"
+                alt="Foundation forms, crew, and concrete pump on a large-scale jobsite"
                 width={900}
                 height={1200}
               />
               <div className="pour-card-copy">
-                <h3>Residential</h3>
+                <h3>Foundations and Flatwork</h3>
                 <p>
-                  Foundations and flatwork
+                  Foundations and precise flatwork
                   <br />
-                  for residential projects.
+                  for large-scale projects.
                 </p>
               </div>
             </Link>
-            <Link className="pour-card reveal" href="/commercial">
+            <Link className="pour-card reveal" href="/services#commercial">
               <img
-                src="/assets/photos/commercial-foundation-pump.jpg"
-                alt="Commercial foundation forms, crew, and concrete pump on a large jobsite"
+                src="/assets/photos/commercial.jpg"
+                alt="Commercial concrete construction project"
                 width={900}
                 height={1200}
               />
               <div className="pour-card-copy">
                 <h3>Commercial</h3>
                 <p>
-                  Foundations and flatwork
+                  Concrete construction
                   <br />
                   for commercial projects.
                 </p>
               </div>
             </Link>
-            <Link className="pour-card reveal" href="/commercial">
+            <Link className="pour-card reveal" href="/services#industrial-and-warehouse">
               <img
                 src="/assets/photos/commercial-floor-finish.jpg"
-                alt="Industrial concrete floor finishing with power trowels"
+                alt="Industrial and warehouse concrete floor finishing"
                 width={900}
                 height={1200}
               />
               <div className="pour-card-copy">
-                <h3>Industrial</h3>
+                <h3>Industrial and Warehouse</h3>
                 <p>
-                  Precise floors placed with
+                  Industrial and warehouse
                   <br />
-                  Somero Laser Screeds.
+                  concrete construction.
+                </p>
+              </div>
+            </Link>
+            <Link className="pour-card reveal" href="/services#agricultural">
+              <img
+                src="/assets/photos/agricultural.jpg"
+                alt="Agricultural concrete foundation walls on a jobsite"
+                width={900}
+                height={1200}
+              />
+              <div className="pour-card-copy">
+                <h3>Agricultural</h3>
+                <p>
+                  Agricultural concrete
+                  <br />
+                  built for demanding use.
+                </p>
+              </div>
+            </Link>
+            <Link className="pour-card reveal" href="/services#multi-tenant">
+              <img
+                src="/assets/photos/gallery-apartment.jpg"
+                alt="Multi-tenant building with concrete site work"
+                width={900}
+                height={1200}
+              />
+              <div className="pour-card-copy">
+                <h3>Multi-Tenant</h3>
+                <p>
+                  Concrete construction
+                  <br />
+                  for multi-tenant projects.
+                </p>
+              </div>
+            </Link>
+            <Link className="pour-card reveal" href="/services#underground-parking">
+              <img
+                src="/assets/photos/what-3.jpg"
+                alt="Large-scale concrete construction"
+                width={900}
+                height={1200}
+              />
+              <div className="pour-card-copy">
+                <h3>Underground Parking</h3>
+                <p>
+                  Concrete construction
+                  <br />
+                  for underground parking.
                 </p>
               </div>
             </Link>

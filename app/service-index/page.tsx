@@ -6,7 +6,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Service Index | Reedy Concrete",
   description:
-    "Index of Reedy Concrete residential, commercial, industrial, and agricultural concrete services.",
+    "Index of Reedy Concrete commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking concrete services.",
 };
 
 export default function Page() {
@@ -15,41 +15,25 @@ export default function Page() {
       title="Service Index"
       subtitle="A quick index of Reedy Concrete service categories across Wisconsin, Minnesota, and Iowa."
     >
-      <h2>Residential</h2>
+      <h2>Services</h2>
       <ul>
         <li>
-          <Link href="/residential">Concrete foundations</Link>
+          <Link href="/services#foundations-and-flatwork">Foundations and flatwork for large-scale projects</Link>
         </li>
         <li>
-          <Link href="/residential">Flatwork</Link>
+          <Link href="/services#commercial">Commercial concrete</Link>
         </li>
         <li>
-          <Link href="/residential">Precision layout</Link>
+          <Link href="/services#industrial-and-warehouse">Industrial and warehouse</Link>
         </li>
         <li>
-          <Link href="/residential">Residential concrete construction</Link>
-        </li>
-      </ul>
-
-      <h2>Commercial / Industrial / Agricultural</h2>
-      <ul>
-        <li>
-          <Link href="/commercial">Foundations and flatwork for large-scale projects</Link>
+          <Link href="/services#agricultural">Agricultural concrete</Link>
         </li>
         <li>
-          <Link href="/commercial">Commercial concrete</Link>
+          <Link href="/services#multi-tenant">Multi-tenant</Link>
         </li>
         <li>
-          <Link href="/commercial">Industrial and warehouse</Link>
-        </li>
-        <li>
-          <Link href="/commercial">Agricultural concrete</Link>
-        </li>
-        <li>
-          <Link href="/commercial">Multi-tenant</Link>
-        </li>
-        <li>
-          <Link href="/commercial">Underground parking</Link>
+          <Link href="/services#underground-parking">Underground parking</Link>
         </li>
       </ul>
 

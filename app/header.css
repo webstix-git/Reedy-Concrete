@@ -180,7 +180,7 @@
   text-decoration: none;
   font-family: var(--font-display), "Oswald", sans-serif;
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 18px;
 }
 
 .site-header .header-phone-icon {
