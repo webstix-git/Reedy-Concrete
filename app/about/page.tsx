@@ -47,7 +47,7 @@ const familyLeaders = [
   { name: "Jim Reedy", role: "President" },
   { name: "Marilyn Reedy", role: "Corporate Secretary" },
   { name: "Prentice Reedy", role: "Vice President" },
-  { name: "Tyler Reedy", role: "Vice President of Field Operations" },
+  { name: "Tyler Reedy", role: "Vice President-Field of Operations" },
 ];
 
 const pillars = [

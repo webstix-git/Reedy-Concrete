@@ -46,8 +46,8 @@ export default function Page() {
           <div className="job-runs job-runs--light job-runs--flip">
             <div className="job-runs-media reveal">
               <img
-                src="/assets/photos/reedy-hardhat.jpg"
-                alt="Reedy Concrete Construction, Inc. hard hat on a chrome hood ornament"
+                src="/assets/photos/careers-pump-truck.jpg"
+                alt="Concrete pump truck set up on a jobsite"
                 width={1400}
                 height={933}
               />

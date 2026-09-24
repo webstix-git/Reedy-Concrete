@@ -163,8 +163,8 @@ export default function Page() {
             </Link>
             <Link className="pour-card reveal" href="/services#underground-parking">
               <img
-                src="/assets/photos/underground-parking.jpg"
-                alt="Finished underground parking garage with concrete columns and slab"
+                src="/assets/photos/underground-parking-structure.jpg"
+                alt="Underground parking structure with concrete columns, slab, and ceiling"
                 width={900}
                 height={1200}
               />
