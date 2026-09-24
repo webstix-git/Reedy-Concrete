@@ -43,12 +43,14 @@ const approachItems = [
   },
 ];
 
+const familyLeaders = [
+  { name: "Jim Reedy", role: "President" },
+  { name: "Marilyn Reedy", role: "Corporate Secretary" },
+  { name: "Prentice Reedy", role: "Vice President" },
+  { name: "Tyler Reedy", role: "Vice President of Field Operations" },
+];
+
 const pillars = [
-  {
-    title: "Family ownership",
-    icon: "/icons/team.svg",
-    copy: "Owned and operated by the Reedy family: Jim Reedy, President; Marilyn Reedy, Corporate Secretary; Prentice Reedy, Vice President; and Tyler Reedy, Vice President of Field Operations.",
-  },
   {
     title: "Long-term crews",
     icon: "/icons/crew.svg",
@@ -118,7 +120,24 @@ export default function Page() {
           <h2 id="pillars-title" className="section-title reveal">
             People first. <span className="accent">Process</span> that holds.
           </h2>
-          <ol className="about-pillar-row">
+          <div className="family-ownership reveal">
+            <div className="family-ownership-head">
+              <img className="about-pillar-icon" src="/icons/team.svg" alt="" width={40} height={40} />
+              <div>
+                <h3>Family ownership</h3>
+                <p>Owned and operated by the Reedy family.</p>
+              </div>
+            </div>
+            <ul className="family-ownership-grid">
+              {familyLeaders.map((leader) => (
+                <li key={leader.name}>
+                  <strong>{leader.name}</strong>
+                  <span>{leader.role}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <ol className="about-pillar-row about-pillar-row--pair">
             {pillars.map((item) => (
               <li key={item.title} className="about-pillar reveal">
                 <img className="about-pillar-icon" src={item.icon} alt="" width={40} height={40} />
