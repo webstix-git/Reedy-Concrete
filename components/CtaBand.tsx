@@ -30,9 +30,15 @@ export default function CtaBand({
           <p>{copy}</p>
         </div>
         <div className="actions actions--left">
-          <Link className="btn btn-primary" href={primaryHref}>
-            {primaryLabel}
-          </Link>
+          {primaryHref.endsWith(".doc") || primaryHref.endsWith(".pdf") ? (
+            <a className="btn btn-primary" href={primaryHref} download>
+              {primaryLabel}
+            </a>
+          ) : (
+            <Link className="btn btn-primary" href={primaryHref}>
+              {primaryLabel}
+            </Link>
+          )}
           {showPhone ? (
             <a className="btn btn-outline" href={`tel:${company.phoneTel}`}>
               {company.phoneDisplay}

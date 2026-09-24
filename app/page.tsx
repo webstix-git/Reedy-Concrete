@@ -7,11 +7,11 @@ import ServiceAreaSection from "@/components/ServiceAreaSection";
 export const metadata: Metadata = {
   title: "Reedy Concrete | Concrete Construction in WI, MN & IA",
   description:
-    "For 50 years, Reedy Concrete has been the trusted choice for high-quality commercial, industrial, agricultural, and residential concrete construction across Wisconsin, Minnesota, and Iowa.",
+    "For more than 50 years, Reedy Concrete has built commercial, industrial, agricultural, and residential concrete across Wisconsin, Minnesota, and Iowa.",
 };
 
 const showcaseImages = [
-  { src: "/assets/photos/commercial-foundation-pump.jpg", alt: "Commercial foundation forms and concrete pump on a large jobsite" },
+  { src: "/assets/photos/aerial-foundation.jpg", alt: "Aerial view of a large-scale concrete foundation" },
   { src: "/assets/photos/gallery-apartment.jpg", alt: "Multi-story commercial building under construction with concrete site work" },
   { src: "/assets/photos/agricultural-silos-slab.jpg", alt: "Agricultural concrete slab with grain silos and elevator" },
   { src: "/assets/photos/residential.jpg", alt: "Residential concrete foundation work" },
@@ -26,6 +26,19 @@ const showcaseImages = [
   { src: "/assets/photos/res-work-1.jpg", alt: "Residential concrete foundation walls" },
   { src: "/assets/photos/comm-work-1.jpg", alt: "Commercial concrete project in progress" },
   { src: "/assets/photos/what-2.jpg", alt: "Concrete slab and formwork on site" },
+  { src: "/assets/photos/gallery-warehouse-floor.jpg", alt: "Crew finishing a large warehouse concrete floor" },
+  { src: "/assets/photos/gallery-ag-silo-forms.jpg", alt: "Circular agricultural foundation forms beside grain silos" },
+  { src: "/assets/photos/gallery-reedy-truck.jpg", alt: "Reedy Concrete truck at a jobsite" },
+  { src: "/assets/photos/gallery-footing-rebar.jpg", alt: "Crew placing rebar in a long concrete footing" },
+  { src: "/assets/photos/gallery-pump-boom.jpg", alt: "Reedy Concrete pump boom against a blue sky" },
+  { src: "/assets/photos/gallery-foundation-walls.jpg", alt: "Aerial view of concrete foundation walls" },
+  { src: "/assets/photos/gallery-footing-layout.jpg", alt: "Crew laying out footings on a large jobsite" },
+  { src: "/assets/photos/gallery-slab-pour.jpg", alt: "Concrete pump placing a large reinforced slab" },
+  { src: "/assets/photos/gallery-power-trowel.jpg", alt: "Reedy Concrete crew member finishing a slab with a power trowel" },
+  { src: "/assets/photos/gallery-flatwork-finish.jpg", alt: "Crew finishing concrete flatwork beside a brick building" },
+  { src: "/assets/photos/gallery-kwik-star-footings.jpg", alt: "Concrete pump and footings on a large commercial jobsite" },
+  { src: "/assets/photos/gallery-ag-barn.jpg", alt: "Agricultural barn interior with concrete alley and stalls" },
+  { src: "/assets/photos/gallery-pump-truck.jpg", alt: "Concrete pump truck set up on a jobsite" },
 ];
 
 export default function Page() {
@@ -45,9 +58,8 @@ export default function Page() {
               <span className="line line--hero-tail">Built to Last.</span>
             </h1>
             <p className="hero-lead">
-              For 50 years, Reedy Concrete has been the trusted choice for high-quality commercial,
-              industrial, agricultural, and residential concrete construction across Wisconsin,
-              Minnesota, and Iowa.
+              For more than 50 years, Reedy Concrete has built commercial, industrial,
+              agricultural, and residential concrete across Wisconsin, Minnesota, and Iowa.
             </p>
             <div className="hero-actions hero-actions--single">
               <a className="btn btn-outline hero-btn-outline" href="/services">
@@ -65,15 +77,14 @@ export default function Page() {
             One standard, every <span className="accent">sector</span>
           </h2>
           <p className="section-intro reveal">
-            We specialize in foundations and precise flatwork for large-scale projects across
-            commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking
-            work.
+            Foundations, footings, and precise flatwork for large commercial, industrial,
+            warehouse, agricultural, multi-tenant, and underground parking projects.
           </p>
           <div className="pour-grid">
             <Link className="pour-card reveal" href="/services#foundations-and-flatwork">
               <img
-                src="/assets/photos/commercial-foundation-pump.jpg"
-                alt="Foundation forms, crew, and concrete pump on a large-scale jobsite"
+                src="/assets/photos/aerial-foundation.jpg"
+                alt="Aerial view of a large-scale concrete foundation"
                 width={900}
                 height={1200}
               />
@@ -152,8 +163,8 @@ export default function Page() {
             </Link>
             <Link className="pour-card reveal" href="/services#underground-parking">
               <img
-                src="/assets/photos/what-3.jpg"
-                alt="Large-scale concrete construction"
+                src="/assets/photos/underground-parking.jpg"
+                alt="Finished underground parking garage with concrete columns and slab"
                 width={900}
                 height={1200}
               />
@@ -191,9 +202,9 @@ export default function Page() {
             One <span className="accent">Crew</span>
           </h2>
           <p>
-            Family-owned and operated in Galesville, Wisconsin, Reedy Concrete is built around
-            long-term people and a reputation for reliability. Many team members have been with us
-            for 10–35+ years, so the work stays consistent from the first job to the next.
+            Family-owned in Galesville, Wisconsin, Reedy Concrete is built on people who stay.
+            Supervisors with 20 to 35 years at the company lead four field crews, so the standard
+            holds from one job to the next.
           </p>
           <blockquote className="why-split-quote">
             We build our reputation on three simple promises: reliable service, competitive pricing,
@@ -217,18 +228,17 @@ export default function Page() {
                 <span className="accent">Proven Experience.</span>
               </h2>
               <p>
-                Reedy Concrete combines 50 years of experience with advanced technology for
-                precision, efficiency, and dependable workmanship.
+                We pair more than 50 years in the field with Trimble Robotic Stations and Somero
+                Laser Screeds, so layout and finishing stay accurate.
               </p>
               <ul className="tech-list tech-list--spaced">
                 <li>
                   <strong>Trimble Robotic Stations</strong>
-                  Improve precision, efficiency, and workmanship on complex pours and critical
-                  alignments.
+                  Precise layout and measurement on complex pours and critical alignments.
                 </li>
                 <li>
                   <strong>Somero Laser Screeds</strong>
-                  Support precise flatwork and concrete finishing for consistently level surfaces.
+                  Precise flatwork and finishing for level, consistent surfaces.
                 </li>
               </ul>
             </div>
@@ -268,10 +278,9 @@ export default function Page() {
                 <span className="line accent">Driven by Family.</span>
               </h2>
               <p>
-                For 50 years, Reedy Concrete has earned its reputation through experienced crews,
-                quality workmanship, and dependable service. We are family-owned and operated, with
-                multiple generations of the Reedy family working together and a clear focus on getting
-                the work done right.
+                For more than 50 years, Reedy Concrete has earned its name through experienced
+                crews, careful workmanship, and dependable service. The Reedy family still leads
+                the company, and the standard on every job is the same: do the work right.
               </p>
               <div className="section-actions family-split-actions">
                 <Link className="btn btn-outline btn-outline--dark" href="/about">
@@ -281,10 +290,11 @@ export default function Page() {
             </div>
             <div className="family-split-media">
               <img
-                src="/assets/photos/family.jpg"
-                alt="Reedy Concrete work truck at a residential jobsite in Galesville, WI"
+                className="family-owned-photo"
+                src="/assets/photos/family-owned.jpg"
+                alt="Reedy Concrete Construction, Inc. hard hat on a chrome hood ornament"
                 width={1100}
-                height={825}
+                height={1467}
               />
             </div>
           </div>
@@ -299,7 +309,7 @@ export default function Page() {
             Let&apos;s Build Something That <span className="accent">Lasts</span>.
           </>
         }
-        copy="Have a concrete project coming up? Talk with Reedy Concrete about commercial, industrial, agricultural, or residential work."
+        copy="Have a project coming up? Talk with Reedy Concrete about commercial, industrial, agricultural, or residential concrete."
         imageSrc="/assets/photos/cta-home.jpg"
       />
     </main>

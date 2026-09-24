@@ -40,10 +40,10 @@ export default function Page() {
                     <time dateTime="2026-03-12">March 12, 2026</time>
                   </p>
                   <div className="prose">
-                    <p>On large commercial, industrial, and warehouse projects, precision is not a finish preference - it is how Reedy Concrete protects quality, schedule, and budget. Delays, costly mistakes, and quality concerns are the problems complex concrete work can create when a contractor cannot meet project specifications. Experienced crews, specialized equipment, and modern technology are how we handle projects of virtually any size while staying on spec and on time.</p>
+                    <p>On large commercial, industrial, and warehouse projects, precision is not a finish preference. It is how Reedy Concrete protects quality, schedule, and budget. When layout or flatwork misses the specification, the rest of the job pays for it. Experienced crews, the right equipment, and modern technology are how we keep large projects on spec and on time.</p>
       
                     <h2>The Problem With Unreliable Precision</h2>
-                    <p>Businesses and large-scale project owners need concrete that is dependable the first time. When layout and flatwork are off, the rest of the job pays for it. Reedy Concrete helps customers build strong, durable, and dependable concrete structures without the delays, costly mistakes, or quality concerns that can come with complex concrete projects.</p>
+                    <p>Owners of large projects need concrete that is right the first time. When layout and flatwork are off, the rest of the job pays for it. Reedy Concrete builds durable structures and keeps complex work on specification, on quality, and on schedule.</p>
                     <ul>
                       <li>Project delays when concrete work does not meet specifications</li>
                       <li>Costly mistakes caused by a lack of precision</li>
@@ -53,7 +53,7 @@ export default function Page() {
       
                     <h2>How Reedy Concrete Places Precise Flatwork</h2>
                     <p>Reedy Concrete uses Somero Laser Screeds to improve precision, efficiency, and workmanship on large-scale flatwork. Before the screed ever touches concrete, layout has to be right. We use Trimble Robotic Stations to support precise layout and measurement on complex pours and critical alignments.</p>
-                    <p>That combination - highly trained crews, Trimble Robotic Stations, and Somero Laser Screeds - is how we deliver the precise flatwork large commercial, industrial, warehouse, and agricultural projects require, while maintaining a strong reputation for reliability and customer service.</p>
+                    <p>Highly trained crews, Trimble Robotic Stations, and Somero Laser Screeds are how we place precise flatwork on large commercial, industrial, warehouse, and agricultural projects, and how we keep a reputation for reliable service.</p>
       
                     <h2>What This Means for Your Project</h2>
                     <p>For businesses across Wisconsin, Minnesota, and Iowa, the payoff is straightforward:</p>
@@ -62,7 +62,7 @@ export default function Page() {
                       <li><strong>Fewer costly mistakes.</strong> Precise layout and laser-screed flatwork protect quality before problems become expensive.</li>
                       <li><strong>Work built to last.</strong> Quality workmanship and structural integrity remain the standard, from foundations through finished floors.</li>
                     </ul>
-                    <p>Equipment matters. So do the people running it. Many Reedy Concrete team members have been with the company for 10–35+ years, and we build our reputation on three simple promises: reliable service, competitive pricing, and finishing every job on time.</p>
+                    <p>Equipment matters. So do the people running it. Our field operations are led by a supervisory team with 20 to 35 years of tenure, and we build our reputation on three simple promises: reliable service, competitive pricing, and finishing every job on time.</p>
                   </div>
                 </div>
               </article>
@@ -82,7 +82,7 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Residential</span>
-                    <h3>Midwest Foundations - What Clients Should Expect From the Pour</h3>
+                    <h3>Midwest Foundations: What Clients Should Expect From the Pour</h3>
                     <p>Reedy Concrete builds solid, dependable foundations with experienced crews and precise layout across Wisconsin, Minnesota, and Iowa...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>
@@ -93,7 +93,7 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Company</span>
-                    <h3>Crew Tenure - Why Long-Term Crews Change the Pour</h3>
+                    <h3>Crew Tenure: Why Long-Term Crews Change the Pour</h3>
                     <p>Concrete work rewards judgment as much as tools. Meet the family-owned crew behind Reedy Concrete's 50 years...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>

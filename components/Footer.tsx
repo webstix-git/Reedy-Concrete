@@ -20,8 +20,8 @@ export default function Footer() {
             />
             <p className="tagline">{company.tagline}</p>
             <p className="footer-brand-copy">
-              50 years of family-owned concrete construction serving Wisconsin, Minnesota, and Iowa
-              with experienced crews and work you can count on.
+              More than 50 years of family-owned concrete construction across Wisconsin, Minnesota,
+              and Iowa, with experienced crews and work you can count on.
             </p>
             <div className="footer-social">
               <p className="footer-social-label">Follow us on:</p>

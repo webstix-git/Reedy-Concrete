@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "For 50 years, Reedy Concrete has been the trusted choice for high-quality commercial, industrial, agricultural, and residential concrete construction across Wisconsin, Minnesota, and Iowa.",
+    "For more than 50 years, Reedy Concrete has built commercial, industrial, agricultural, and residential concrete across Wisconsin, Minnesota, and Iowa.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

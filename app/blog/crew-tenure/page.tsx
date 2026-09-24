@@ -3,8 +3,8 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Why 10-35+ Years of Crew Tenure Changes the Pour | Reedy Concrete Blog",
-  description: "Why 10-35+ years of crew tenure changes the pour at family-owned Reedy Concrete in Galesville, WI.",
+  title: "Why Long-Term Crews Change the Pour | Reedy Concrete Blog",
+  description: "Why long-term crews change the pour at family-owned Reedy Concrete in Galesville, Wisconsin.",
 };
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
     <main>
       <PageHero
         title="Blog"
-        description="Why 10-35+ years of crew tenure changes the pour: how long-term people protect quality, schedule, and judgment on family-owned Reedy Concrete jobsites."
+        description="How long-term crews protect quality, schedule, and judgment on family-owned Reedy Concrete jobsites."
         ariaLabel="Blog article"
       />
       
@@ -23,7 +23,7 @@ export default function Page() {
                 <span aria-hidden="true">/</span>
                 <Link href="/blog">Blog</Link>
                 <span aria-hidden="true">/</span>
-                <span className="current">Why 10-35+ Years of Crew Tenure Changes the Pour</span>
+                <span className="current">Why Long-Term Crews Change the Pour</span>
               </nav>
             </div>
           </div>
@@ -46,17 +46,17 @@ export default function Page() {
                     <p>A crew that has been together for years builds up things a newly assembled team simply has not had time to develop:</p>
                     <ul>
                       <li><strong>Fewer surprises on site.</strong> Experienced crews communicate clearly, catch issues early, and stay on plan.</li>
-                      <li><strong>Consistency across projects.</strong> Many Reedy Concrete team members have been with the company for 10–35+ years, so the standard does not reset with every new hire.</li>
+                      <li><strong>Consistency across projects.</strong> Our supervisory team includes people with 20 to 35 years at Reedy Concrete, so the standard does not reset with every new hire.</li>
                       <li><strong>Better judgment under pressure.</strong> When a schedule gets tight, an experienced crew knows where quality cannot be compromised.</li>
                       <li><strong>Reliable delivery.</strong> Long-term people help us finish every job on time without sacrificing workmanship.</li>
                     </ul>
       
                     <h2>A Family-Owned Company Built Around This</h2>
-                    <p>Reedy Concrete is a multi-generational, family-owned contractor based in Galesville, Wisconsin. For 50 years, we have built the company around long-term employees, many with 10–35+ years of tenure. That continuity shows up in communication on site, fewer surprises for project partners, and work customers can count on across Wisconsin, Minnesota, and Iowa.</p>
+                    <p>Reedy Concrete is a multi-generational, family-owned contractor based in Galesville, Wisconsin. For over 50 years, we have built the company around long-term employees and a supervisory team with 20 to 35 years of tenure. That continuity shows up in communication on site, fewer surprises for project partners, and work customers can count on across Wisconsin, Minnesota, and Iowa.</p>
                     <p>It is easy for a company to talk about experience. What actually matters is whether that experience is still on the crew when your job gets poured. At Reedy, it usually is.</p>
       
                     <h2>What This Means for You</h2>
-                    <p>When you call or send project details, you are talking with a team that treats reliability as part of the product - not an add-on, and not marketing language. Whether it is residential, commercial, industrial, or agricultural concrete work, the people showing up to do the work are the same people who have been doing it here for years.</p>
+                    <p>When you call or send project details, you are talking with a team that treats reliability as part of the work, not a line in a brochure. On residential, commercial, industrial, and agricultural jobs, the people who show up are the same people who have been doing this work here for years.</p>
                   </div>
                 </div>
               </article>
@@ -76,7 +76,7 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Commercial &amp; Industrial</span>
-                    <h3>Laser Screed Floors - Precision on Commercial and Industrial Work</h3>
+                    <h3>Laser Screed Floors: Precision on Commercial and Industrial Work</h3>
                     <p>Somero Laser Screeds and Trimble Robotic Stations help Reedy Concrete deliver precise flatwork on large-scale projects...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>
@@ -87,7 +87,7 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Residential</span>
-                    <h3>Midwest Foundations - What Clients Should Expect From the Pour</h3>
+                    <h3>Midwest Foundations: What Clients Should Expect From the Pour</h3>
                     <p>Reedy Concrete builds solid, dependable foundations with experienced crews and precise layout across Wisconsin, Minnesota, and Iowa...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>

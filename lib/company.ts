@@ -1,7 +1,8 @@
 export const company = {
   name: "Reedy Concrete",
-  legalName: "Reedy Concrete",
+  legalName: "Reedy Concrete Construction, Inc.",
   tagline: "Family-owned concrete contractor",
+  applicationUrl: "/assets/RCC-Inc-Application-2025.doc",
   phoneDisplay: "(608) 582-4335",
   phoneTel: "+16085824335",
   emails: ["prentice@reedyconcrete.com", "tyler@reedyconcrete.com"] as const,

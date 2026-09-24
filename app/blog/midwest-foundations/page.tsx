@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "What Midwest Clients Should Expect From a Foundation Pour | Reedy Concrete Blog",
-  description: "What clients should expect from a foundation pour - careful layout, experienced crews, and dependable results from Reedy Concrete.",
+  description: "What clients should expect from a foundation pour: careful layout, experienced crews, and dependable results from Reedy Concrete.",
 };
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
     <main>
       <PageHero
         title="Blog"
-        description="What Midwest clients should expect from a foundation pour - careful layout, experienced crews, and dependable results from Reedy Concrete."
+        description="What Midwest clients should expect from a foundation pour: careful layout, experienced crews, and dependable results from Reedy Concrete."
         ariaLabel="Blog article"
       />
       
@@ -40,7 +40,7 @@ export default function Page() {
                     <time dateTime="2026-02-18">February 18, 2026</time>
                   </p>
                   <div className="prose">
-                    <p>Reedy Concrete helps customers build strong, durable, and dependable concrete structures without the delays, costly mistakes, or quality concerns that can come with complex concrete projects. Foundations are a core part of that work, whether the project is residential, commercial, industrial, or agricultural.</p>
+                    <p>A foundation has to be strong, durable, and finished without the delays that complex concrete work can create. That is core work for Reedy Concrete, on residential, commercial, industrial, and agricultural projects.</p>
       
                     <h2>Why Foundation Work Demands Experienced Crews</h2>
                     <p>A foundation has to meet project specifications and stay on schedule. That takes more than a crew that can place concrete. It takes people who know how to protect quality on demanding jobs:</p>
@@ -54,14 +54,14 @@ export default function Page() {
                     <p>At Reedy Concrete, foundation work starts with careful layout and experienced crews. We use Trimble Robotic Stations to support precise layout and measurement before concrete is placed, which cuts down on the kind of mistakes that are hard and expensive to fix later. That same discipline carries through into precise flatwork.</p>
                     <p>A few things clients should expect from a foundation crew that is doing it right:</p>
                     <ol>
-                      <li><strong>A real layout process</strong> - verified with modern technology, including Trimble Robotic Stations, before the pour.</li>
-                      <li><strong>Quality workmanship</strong> - structural integrity and a finish that holds up, not work that only looks complete on pour day.</li>
-                      <li><strong>Reliable communication</strong> - a clear plan for when the work happens and how it stays on schedule.</li>
-                      <li><strong>On-time completion</strong> - one of three promises we build our reputation on, alongside reliable service and competitive pricing.</li>
+                      <li><strong>A real layout process,</strong> verified with modern technology, including Trimble Robotic Stations, before the pour.</li>
+                      <li><strong>Quality workmanship,</strong> with structural integrity and a finish that holds up after pour day.</li>
+                      <li><strong>Reliable communication,</strong> with a clear plan for when the work happens and how it stays on schedule.</li>
+                      <li><strong>On-time completion,</strong> one of three promises we build our reputation on, alongside reliable service and competitive pricing.</li>
                     </ol>
       
                     <h2>Ask the Right Questions Before You Sign</h2>
-                    <p>Whether you are building in Wisconsin, Minnesota, or Iowa, ask any foundation contractor for a clear scope, a real schedule, and a crew that treats the work like it has to last. Reedy Concrete is a family-owned and operated contractor based in Galesville, Wisconsin, with 50 years in the industry, highly trained crews, and multiple generations of the Reedy family still involved in the business.</p>
+                    <p>Whether you are building in Wisconsin, Minnesota, or Iowa, ask any foundation contractor for a clear scope, a real schedule, and a crew that treats the work like it has to last. Reedy Concrete is a family-owned and operated contractor based in Galesville, Wisconsin, with over 50 years in the industry, highly trained crews, and the Reedy family still leading the business.</p>
                   </div>
                 </div>
               </article>
@@ -81,7 +81,7 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Commercial &amp; Industrial</span>
-                    <h3>Laser Screed Floors - Precision on Commercial and Industrial Work</h3>
+                    <h3>Laser Screed Floors: Precision on Commercial and Industrial Work</h3>
                     <p>Somero Laser Screeds and Trimble Robotic Stations help Reedy Concrete deliver precise flatwork on large-scale projects...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>
@@ -92,7 +92,7 @@ export default function Page() {
                   </div>
                   <div className="blog-card-copy">
                     <span className="blog-card-tag">Company</span>
-                    <h3>Crew Tenure - Why Long-Term Crews Change the Pour</h3>
+                    <h3>Crew Tenure: Why Long-Term Crews Change the Pour</h3>
                     <p>Concrete work rewards judgment as much as tools. Meet the family-owned crew behind Reedy Concrete's 50 years...</p>
                     <span className="text-link">Read article <span aria-hidden="true">&rarr;</span></span>
                   </div>

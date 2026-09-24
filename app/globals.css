@@ -1526,9 +1526,13 @@ h3 {
   max-width: 100%;
 }
 
-.contact-page .section-title { color: var(--black); }
+.contact-page .section-title { color: var(--black); margin-bottom: 1.5rem; }
 .contact-page .section-intro { color: var(--text-light); }
 .contact-page .section-label { color: var(--red); }
+
+#application {
+  scroll-margin-top: calc(var(--nav-h, 7.25rem) + 1rem);
+}
 
 .contact-layout {
   display: grid;
@@ -1615,6 +1619,23 @@ h3 {
 
 .form-note .req {
   color: var(--red);
+}
+
+.contact-form .form-block-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 0.85rem 0 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgb(255 255 255 / 0.14);
+}
+
+.contact-form .form-block-title:first-of-type {
+  border-top: none;
+  padding-top: 0.15rem;
 }
 
 .contact-info-card {
@@ -7171,6 +7192,10 @@ section.tech.about-tech .tech-visual img {
   height: 100% !important;
   min-height: 0 !important;
   object-fit: cover !important;
+}
+
+.family-split-media img.family-owned-photo {
+  object-position: center 28%;
 }
 
 .service-area-map-icon {

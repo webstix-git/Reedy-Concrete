@@ -8,7 +8,7 @@ import ServiceAreaSection from "@/components/ServiceAreaSection";
 export const metadata: Metadata = {
   title: "Services | Reedy Concrete",
   description:
-    "Reedy Concrete provides foundations and precise flatwork for large-scale commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking projects across Wisconsin, Minnesota, and Iowa.",
+    "Foundations, footings, and precise flatwork for commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking projects across Wisconsin, Minnesota, and Iowa.",
 };
 
 const services = [
@@ -20,10 +20,10 @@ const services = [
         Foundations and <span className="accent">Flatwork</span>
       </>
     ),
-    summary: "Solid foundations and precise flatwork for large-scale projects.",
-    image: "/assets/photos/commercial-foundation-pump.jpg",
-    alt: "Foundation forms, crew, and concrete pump on a large-scale jobsite",
-    copy: "Reedy Concrete specializes in solid foundations and precise flatwork tailored to large-scale projects. Highly trained crews, Trimble Robotic Stations, and Somero Laser Screeds help us meet project specifications and timelines without the delays, costly mistakes, or quality concerns that can come with complex concrete work.",
+    summary: "Foundations, footings, and precise flatwork for large projects.",
+    image: "/assets/photos/aerial-foundation.jpg",
+    alt: "Aerial view of a large-scale concrete foundation",
+    copy: "We build large-scale foundations, footings, and flatwork to the drawings and the schedule. Trained crews, Trimble Robotic Stations, and Somero Laser Screeds keep layout and finishing accurate on complex work.",
   },
   {
     id: "commercial",
@@ -33,10 +33,10 @@ const services = [
         <span className="accent">Commercial</span> Concrete
       </>
     ),
-    summary: "High-quality commercial concrete construction for demanding builds.",
+    summary: "Commercial concrete for projects that have to stay on spec and on schedule.",
     image: "/assets/photos/commercial.jpg",
     alt: "Commercial concrete construction project",
-    copy: "For 50 years, Reedy Concrete has been the trusted choice for high-quality commercial concrete construction across Wisconsin, Minnesota, and Iowa. As a family-owned and operated contractor, we handle demanding commercial projects with quality workmanship, competitive pricing, and a clear commitment to finishing every job on time.",
+    copy: "Commercial concrete is a core part of our work across Wisconsin, Minnesota, and Iowa. As a family-owned contractor, we take on demanding projects with careful workmanship, competitive pricing, and a record of finishing on time.",
   },
   {
     id: "industrial-and-warehouse",
@@ -46,10 +46,10 @@ const services = [
         Industrial and <span className="accent">Warehouse</span>
       </>
     ),
-    summary: "Industrial and warehouse concrete built for precision and scale.",
+    summary: "Industrial and warehouse concrete built for flatness, capacity, and schedule.",
     image: "/assets/photos/commercial-floor-finish.jpg",
     alt: "Industrial and warehouse concrete floor finishing",
-    copy: "Industrial and warehouse projects demand precision, capacity, and reliable delivery. Somero Laser Screeds support precise flatwork, and Trimble Robotic Stations improve layout accuracy so the work meets specifications. Long-term crews, many with 10–35+ years of tenure, help us take on large-scale industrial and warehouse concrete efficiently.",
+    copy: "Industrial and warehouse floors need capacity, flatness, and a crew that can hold the schedule. Somero Laser Screeds and Trimble Robotic Stations support that work. Four field crews, led by supervisors with 20 to 35 years on the job, handle projects at this scale.",
   },
   {
     id: "agricultural",
@@ -59,10 +59,10 @@ const services = [
         <span className="accent">Agricultural</span> Concrete
       </>
     ),
-    summary: "Agricultural concrete construction built for demanding use.",
+    summary: "Agricultural concrete built for hard use and a long service life.",
     image: "/assets/photos/agricultural.jpg",
     alt: "Agricultural concrete foundation walls on a jobsite",
-    copy: "Agricultural concrete is a core part of our work. Based in Galesville, Wisconsin, we serve agricultural projects throughout Wisconsin, Minnesota, and Iowa with the same standard we bring to commercial and industrial jobs: dependable service, precision, and quality workmanship on demanding concrete construction.",
+    copy: "Agricultural concrete gets the same crews and the same standard as our commercial and industrial work. From Galesville, we serve farm and agribusiness projects throughout Wisconsin, Minnesota, and Iowa.",
   },
   {
     id: "multi-tenant",
@@ -72,10 +72,10 @@ const services = [
         <span className="accent">Multi-Tenant</span> Projects
       </>
     ),
-    summary: "Foundations and flatwork for multi-tenant projects.",
+    summary: "Foundations and flatwork for multi-tenant buildings.",
     image: "/assets/photos/gallery-apartment.jpg",
     alt: "Multi-tenant building with concrete site work",
-    copy: "Reedy Concrete provides concrete construction for multi-tenant projects, from solid foundations through precise flatwork. Specialized equipment and experienced crews help improve precision, efficiency, and workmanship while we keep the job on schedule and finish on time.",
+    copy: "Multi-tenant projects need foundations and flatwork that stay on spec while the rest of the building moves. Experienced crews and the right equipment keep the concrete on schedule.",
   },
   {
     id: "underground-parking",
@@ -85,10 +85,10 @@ const services = [
         Underground <span className="accent">Parking</span>
       </>
     ),
-    summary: "Precise concrete construction for underground parking.",
-    image: "/assets/photos/what-3.jpg",
-    alt: "Large-scale concrete construction",
-    copy: "Underground parking is a Reedy Concrete specialty. This work requires precision, structural integrity, and crews who can meet strict project specifications. We combine 50 years of experience with Trimble Robotic Stations and Somero Laser Screeds to deliver dependable underground parking concrete construction.",
+    summary: "Underground parking concrete built to a tight specification.",
+    image: "/assets/photos/underground-parking.jpg",
+    alt: "Finished underground parking garage with concrete columns and slab",
+    copy: "Underground parking calls for precise layout and concrete that meets a tight specification. We bring more than 50 years in the field, Trimble Robotic Stations, and Somero Laser Screeds to that work.",
   },
 ];
 
@@ -97,8 +97,8 @@ export default function Page() {
     <main className="services-page">
       <PageHero
         title="Services"
-        description="Foundations and precise flatwork for large-scale commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking projects across Wisconsin, Minnesota, and Iowa."
-        imageSrc="/assets/photos/commercial-foundation-pump.jpg"
+        description="Foundations, footings, and precise flatwork for commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking projects across Wisconsin, Minnesota, and Iowa."
+        imageSrc="/assets/photos/reedy-pump-boom.jpg"
         ariaLabel="Services"
         className="page-hero--banner-service"
       />
@@ -109,8 +109,8 @@ export default function Page() {
           <div className="job-runs job-runs--light job-runs--flip">
             <div className="job-runs-media reveal">
               <img
-                src="/assets/photos/commercial-floor-finish.jpg"
-                alt="Crew finishing a large concrete floor"
+                src="/assets/photos/pump-truck-jobsite.jpg"
+                alt="Concrete pump truck on a jobsite"
                 width={1400}
                 height={933}
               />
@@ -121,10 +121,10 @@ export default function Page() {
                 Large-scale concrete, done to <span className="accent">spec</span>
               </h2>
               <p className="job-runs-lead">
-                Reedy Concrete is a family-owned and operated contractor specializing in foundations
-                and precise flatwork for large-scale projects. We serve businesses across Wisconsin,
-                Minnesota, and Iowa with experienced crews, specialized equipment, and three simple
-                promises: reliable service, competitive pricing, and finishing every job on time.
+                Reedy Concrete is a family-owned contractor. We build foundations, footings, and
+                precise flatwork for large projects across Wisconsin, Minnesota, and Iowa. The
+                promise is the same on every job: reliable service, competitive pricing, and work
+                finished on time.
               </p>
             </div>
           </div>
@@ -197,17 +197,17 @@ export default function Page() {
                 <span className="accent">pours</span>
               </h2>
               <p>
-                Trimble Robotic Stations and Somero Laser Screeds improve precision, efficiency, and
-                workmanship on complex commercial, industrial, warehouse, and agricultural projects.
+                Trimble Robotic Stations and Somero Laser Screeds keep layout and flatwork accurate
+                on commercial, industrial, warehouse, and agricultural projects.
               </p>
               <ul className="tech-list">
                 <li>
                   <strong>Trimble Robotic Stations</strong>
-                  Support precise layout and measurement on complex pours and critical alignments.
+                  Precise layout and measurement on complex pours and critical alignments.
                 </li>
                 <li>
                   <strong>Somero Laser Screeds</strong>
-                  Support precise flatwork and finishing for consistently level surfaces.
+                  Precise flatwork and finishing for level, consistent surfaces.
                 </li>
               </ul>
             </div>
@@ -229,7 +229,7 @@ export default function Page() {
             Have a <span className="accent">Project</span> Coming Up?
           </>
         }
-        copy="Talk with Reedy Concrete about foundations and flatwork, or commercial, industrial, warehouse, agricultural, multi-tenant, or underground parking work."
+        copy="Talk with Reedy Concrete about foundations, flatwork, or commercial, industrial, warehouse, agricultural, multi-tenant, or underground parking work."
         imageSrc="/assets/photos/comm-cta.jpg"
       />
     </main>

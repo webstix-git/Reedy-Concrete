@@ -8,7 +8,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Contact Us | Reedy Concrete",
   description:
-    "Contact Reedy Concrete to discuss commercial, industrial, agricultural, or residential concrete construction across Wisconsin, Minnesota, and Iowa.",
+    "Contact Reedy Concrete about commercial, industrial, agricultural, or residential concrete across Wisconsin, Minnesota, and Iowa.",
 };
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
     <main>
       <PageHero
         title="Contact Us"
-        description="Talk with Reedy Concrete about your next project. Call, email, or send a project inquiry."
+        description="Talk with Reedy Concrete about your next project. Call, email, or send the details."
         imageSrc="/assets/photos/contact-banner.jpg"
         ariaLabel="Contact Us"
         className="page-hero--banner-contact"

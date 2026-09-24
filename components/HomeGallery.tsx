@@ -11,8 +11,6 @@ type HomeGalleryProps = {
 
 const PINTEREST_RATIOS = ["short", "medium", "tall", "medium", "short", "tall", "medium", "short"] as const;
 const MOSAIC_ROW_SIZE = 5;
-const MOSAIC_EXPANDED_ROWS = 3;
-const MOSAIC_EXPANDED_COUNT = MOSAIC_ROW_SIZE * MOSAIC_EXPANDED_ROWS;
 
 type MosaicRow = {
   main: LightboxImage;
@@ -57,9 +55,7 @@ export default function HomeGallery({
     : isMosaic
       ? MOSAIC_ROW_SIZE
       : initialCount;
-  const expandedCount = isMosaic
-    ? Math.min(images.length, MOSAIC_EXPANDED_COUNT)
-    : Math.min(images.length, 22);
+  const expandedCount = isMosaic ? images.length : Math.min(images.length, 22);
   const visible = expanded
     ? images.slice(0, expandedCount)
     : images.slice(0, collapsedCount);

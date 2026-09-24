@@ -42,13 +42,13 @@ export default function ServiceAreaSection({
             <p>
               {showAddress ? (
                 <>
-                  From our Galesville, Wisconsin location at {company.addressLines[0]},{" "}
-                  {company.addressLines[1]}, we take on work across the Midwest, serving customers in:
+                  From our Galesville, Wisconsin office at {company.addressLines[0]},{" "}
+                  {company.addressLines[1]}, we work across the Midwest in:
                 </>
               ) : (
                 <>
-                  Reedy Concrete provides commercial, industrial, agricultural, and residential
-                  concrete construction across the Midwest, serving customers throughout:
+                  Reedy Concrete builds commercial, industrial, agricultural, and residential
+                  concrete across the Midwest, including:
                 </>
               )}
             </p>
@@ -62,8 +62,8 @@ export default function ServiceAreaSection({
             </ul>
             <p className="service-area-note-copy">
               {showAddress
-                ? "We serve Wisconsin, Minnesota, and Iowa. Contact us to discuss your project."
-                : "Based in Galesville, Wisconsin, we serve Wisconsin, Minnesota, and Iowa. Contact us to discuss your project."}
+                ? "We serve Wisconsin, Minnesota, and Iowa. Call or write to talk through your project."
+                : "Based in Galesville, Wisconsin, we serve Wisconsin, Minnesota, and Iowa. Call or write to talk through your project."}
             </p>
             {showCta ? (
               <div className="section-actions">

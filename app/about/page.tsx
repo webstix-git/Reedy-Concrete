@@ -5,16 +5,16 @@ import PageHero from "@/components/PageHero";
 import ServiceAreaSection from "@/components/ServiceAreaSection";
 
 export const metadata: Metadata = {
-  title: "About Reedy Concrete | 50 Years of Concrete Experience",
+  title: "About Reedy Concrete | Over 50 Years of Concrete Experience",
   description:
-    "Reedy Concrete is a family-owned concrete contractor built on 50 years of experience, skilled people, and dependable workmanship.",
+    "Reedy Concrete Construction, Inc. is a family-owned contractor with more than 50 years of experience in foundations, footings, and flatwork across Wisconsin, Minnesota, and Iowa.",
 };
 
 const approachItems = [
   {
     title: "Quality workmanship",
     icon: "/icons/approach-quality.png",
-    copy: "We take pride in work that holds up: sound structure, quality workmanship, and concrete you can count on for years.",
+    copy: "We build concrete that holds up: sound structure, careful finishing, and work you can count on for years.",
   },
   {
     title: "Precision",
@@ -29,17 +29,17 @@ const approachItems = [
   {
     title: "Customer service",
     icon: "/icons/approach-execution.png",
-    copy: "We treat every project like a relationship, not a one-off pour, listening closely and staying easy to work with from start to finish.",
+    copy: "We stay easy to reach and straightforward to work with, from the first call through the finished pour.",
   },
   {
     title: "Safety & professionalism",
     icon: "/icons/safety.svg",
-    copy: "Jobsites stay organized and professional, with safety as a standing part of how crews work, not an afterthought.",
+    copy: "Safety is part of the work, not a separate step. Every person on our team is certified in CPR and first aid, and field members hold OSHA, MSHA, ADA, and ACI credentials.",
   },
   {
     title: "Competitive pricing",
     icon: "/icons/approach-budget.png",
-    copy: "Fair, clear pricing and careful use of time and materials help keep projects on budget without cutting corners.",
+    copy: "Pricing stays clear, and we use time and materials carefully so the job can stay on budget without cutting the work short.",
   },
 ];
 
@@ -47,17 +47,17 @@ const pillars = [
   {
     title: "Family ownership",
     icon: "/icons/team.svg",
-    copy: "The Reedy family remains actively involved, with multiple generations working alongside each other.",
+    copy: "Owned and operated by the Reedy family: Jim Reedy, President; Marilyn Reedy, Corporate Secretary; Prentice Reedy, Vice President; and Tyler Reedy, Vice President of Field Operations.",
   },
   {
     title: "Long-term crews",
     icon: "/icons/crew.svg",
-    copy: "Many of our people have been here 10–35+ years. That kind of tenure shows up in the quality of the work.",
+    copy: "Four field crews are led by Tony B. (35 years), Brett K. (30 years), Travis M. (25 years), and John S. (20 years). Together, they bring a combined century of hands-on leadership.",
   },
   {
     title: "Long-term relationships",
     icon: "/icons/handshake.svg",
-    copy: "We build lasting ties with customers and employees alike, because good concrete work is built on trust.",
+    copy: "We invest in career pathways so skilled people stay. That continuity is what our customers can count on from one project to the next.",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function Page() {
     <main>
       <PageHero
         title="About Us"
-        description="A family-owned concrete company with deep Midwest roots, built on dependable work and people who stay."
+        description="A family-owned contractor with more than 50 years of experience in large-scale foundations, footings, and flatwork."
         imageSrc="/assets/photos/about-banner.jpg"
         ariaLabel="About Us"
         className="page-hero--banner-about"
@@ -91,16 +91,20 @@ export default function Page() {
               </h2>
               <div className="prose">
                 <p>
-                  Reedy Concrete started as a family-owned and operated business with a simple goal:
-                  deliver dependable, high-quality concrete services customers can count on. Over the
-                  past 50 years, we have grown by building strong relationships and delivering
-                  projects that hold up.
+                  Reedy Concrete Construction, Inc. is a family-owned and operated contractor with
+                  more than 50 years in concrete construction. We build large-scale foundations,
+                  footings, and flatwork for commercial, agricultural, industrial, and multi-tenant
+                  clients across Wisconsin, Minnesota, and Iowa.
                 </p>
                 <p>
-                  Based in Galesville, Wisconsin, we serve customers throughout Wisconsin, Minnesota,
-                  and Iowa. The Reedy family remains actively involved, with multiple generations
-                  working together. Many of our crew members have been with us for 10–35+ years, which
-                  says a lot about how we treat our people and our community.
+                  Clients stay with us for reliable service, competitive pricing, and work that
+                  finishes on schedule. On jobs where delays are common, we keep the crew, the plan,
+                  and the timeline in order.
+                </p>
+                <p>
+                  Trimble Robotic Stations and Somero Laser Screeds support layout and finishing
+                  when the work is demanding. Each project is built to the specifications you set,
+                  by crews trained to do it safely and well.
                 </p>
               </div>
             </div>
@@ -131,8 +135,8 @@ export default function Page() {
           <div className="tech-inner tech-inner--image-left">
             <div className="tech-visual">
               <img
-                src="/assets/photos/about-tech.jpg"
-                alt="Laser screed and crew placing a large commercial concrete floor"
+                src="/assets/photos/reedy-pump-boom.jpg"
+                alt="Reedy Concrete Construction pump boom"
                 width={1400}
                 height={933}
               />
@@ -144,17 +148,17 @@ export default function Page() {
                 <span className="accent">Modern precision.</span>
               </h2>
               <p>
-                Decades in the field, paired with Trimble Robotic Stations and Somero Laser Screeds,
-                keep layout and finishing accurate when the job gets demanding.
+                We pair more than 50 years in the field with Trimble Robotic Stations and Somero
+                Laser Screeds, so layout and finishing stay accurate when the job is demanding.
               </p>
               <ul className="tech-list">
                 <li>
                   <strong>Trimble Robotic Stations</strong>
-                  Improve precise layout and measurement where alignment matters.
+                  Precise layout and measurement where alignment matters.
                 </li>
                 <li>
                   <strong>Somero Laser Screeds</strong>
-                  Support flatwork and finishing for consistent, precise concrete surfaces.
+                  Flatwork and finishing for consistent, precise surfaces.
                 </li>
               </ul>
             </div>
@@ -194,7 +198,7 @@ export default function Page() {
             your <span className="accent">next</span> pour?
           </>
         }
-        copy="Reach out to discuss commercial, industrial, agricultural, or residential concrete work."
+        copy="Call or write about commercial, industrial, agricultural, or residential concrete."
         imageSrc="/assets/photos/about-cta.jpg"
       />
     </main>
