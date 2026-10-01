@@ -121,7 +121,7 @@ export default function Page() {
                 Large-scale concrete, done to <span className="accent">spec</span>
               </h2>
               <p className="job-runs-lead">
-                Reedy Concrete is a family-owned contractor. We build foundations, footings, and
+                Reedy Concrete is a family-owned contractor. We pour foundations, footings, and
                 precise flatwork for large projects across Wisconsin, Minnesota, and Iowa. The
                 promise is the same on every job: reliable service, competitive pricing, and work
                 finished on time.
