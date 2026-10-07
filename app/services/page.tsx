@@ -87,7 +87,7 @@ const services = [
     ),
     summary: "Underground parking concrete built to a tight specification.",
     image: "/assets/photos/underground-parking-structure.jpg",
-    alt: "Underground parking structure with concrete columns, slab, and ceiling",
+    alt: "Underground parking under construction with rebar, concrete columns, and slab",
     copy: "Underground parking calls for precise layout and concrete that meets a tight specification. We bring more than 50 years in the field, Trimble Robotic Stations, and Somero Laser Screeds to that work.",
   },
 ];

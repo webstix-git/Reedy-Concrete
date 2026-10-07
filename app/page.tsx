@@ -164,9 +164,9 @@ export default function Page() {
             <Link className="pour-card reveal" href="/services#underground-parking">
               <img
                 src="/assets/photos/underground-parking-structure.jpg"
-                alt="Underground parking structure with concrete columns, slab, and ceiling"
-                width={900}
-                height={1200}
+                alt="Underground parking under construction with rebar, concrete columns, and slab"
+                width={640}
+                height={480}
               />
               <div className="pour-card-copy">
                 <h3>Underground Parking</h3>
