@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
   for (const [key, value] of submission.entries()) {
     if (typeof value === "string") payload.set(key, value);
   }
-  if (!payload.get("redirect")) payload.set("redirect", `${origin}/thank-you`);
+  if (!payload.get("redirect")) payload.set("redirect", `${origin}/careers/thank-you`);
 
   const requestOrigin = request.headers.get("origin") || origin;
 
@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
     });
 
     if (forwarded.status >= 200 && forwarded.status < 400) {
-      return NextResponse.redirect(`${origin}/thank-you`, 303);
+      return NextResponse.redirect(`${origin}/careers/thank-you`, 303);
     }
   } catch (error) {
     console.error("Career application forwarding failed.", error);

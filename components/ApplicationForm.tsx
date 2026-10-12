@@ -72,10 +72,10 @@ function YesNoSelect({
 export default function ApplicationForm({ formError }: ApplicationFormProps) {
   const [errors, setErrors] = useState<FieldErrors>({});
   const [captchaError, setCaptchaError] = useState("");
-  const [redirectTo, setRedirectTo] = useState("/thank-you");
+  const [redirectTo, setRedirectTo] = useState("/careers/thank-you");
 
   useEffect(() => {
-    setRedirectTo(`${window.location.origin}/thank-you`);
+    setRedirectTo(`${window.location.origin}/careers/thank-you`);
   }, []);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {

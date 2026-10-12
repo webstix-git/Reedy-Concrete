@@ -173,6 +173,19 @@ export const sitePages = {
       { name: "Thank You", path: "/thank-you" },
     ],
   },
+  careerThankYou: {
+    path: "/careers/thank-you",
+    title: "Application Received | Reedy Concrete Careers",
+    description:
+      "Thank you for applying to Reedy Concrete. We received your application and will follow up by phone or email.",
+    index: false,
+    crumbs: [
+      { name: home, path: "/" },
+      { name: "Careers", path: "/careers" },
+      { name: "Thank You", path: "/careers/thank-you" },
+    ],
+    image: "/assets/photos/reedy-pump-boom.jpg",
+  },
 } as const satisfies Record<string, SitePage>;
 
 export const indexablePages: SitePage[] = (Object.values(sitePages) as SitePage[]).filter(
