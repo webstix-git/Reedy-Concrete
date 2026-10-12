@@ -1,7 +1,9 @@
 "use client";
 
-import { FormEvent, useState } from "react";
-import { company } from "@/lib/company";
+import { FormEvent, useEffect, useState } from "react";
+
+const FORM_ACTION =
+  "https://ywwxvriolxwuqcwjaluh.supabase.co/functions/v1/form-submit/b37b385f-15b5-404d-ba29-2639272d6c5d";
 
 type FieldKey =
   | "name"
@@ -59,13 +61,15 @@ function YesNoSelect({
 }
 
 export default function ApplicationForm() {
-  const [status, setStatus] = useState<"idle" | "ready">("idle");
   const [errors, setErrors] = useState<FieldErrors>({});
+  const [redirectTo, setRedirectTo] = useState("/thank-you");
+
+  useEffect(() => {
+    setRedirectTo(`${window.location.origin}/thank-you`);
+  }, []);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const data = new FormData(form);
+    const data = new FormData(event.currentTarget);
 
     const name = String(data.get("name") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
@@ -87,11 +91,8 @@ export default function ApplicationForm() {
 
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) {
-      setStatus("idle");
-      return;
+      event.preventDefault();
     }
-
-    setStatus("ready");
   };
 
   const clearError = (key: FieldKey) => {
@@ -104,7 +105,8 @@ export default function ApplicationForm() {
   };
 
   return (
-    <form className="contact-form reveal" action="#" method="post" onSubmit={handleSubmit} noValidate>
+    <form className="contact-form reveal" action={FORM_ACTION} method="POST" onSubmit={handleSubmit} noValidate>
+      <input type="hidden" name="redirect" value={redirectTo} />
       <p className="form-note">
         Fields marked with an asterisk (<span className="req">*</span>) are required.
       </p>
@@ -372,15 +374,6 @@ export default function ApplicationForm() {
       <button className="btn btn-primary" type="submit">
         Submit Application
       </button>
-
-      {status === "ready" ? (
-        <p className="form-status" role="status">
-          Online form delivery is not connected yet. Please call{" "}
-          <a href={`tel:${company.phoneTel}`}>{company.phoneDisplay}</a> or email{" "}
-          <a href={`mailto:${company.emails[0]}`}>{company.emails[0]}</a> or{" "}
-          <a href={`mailto:${company.emails[1]}`}>{company.emails[1]}</a> to reach the team.
-        </p>
-      ) : null}
     </form>
   );
 }
