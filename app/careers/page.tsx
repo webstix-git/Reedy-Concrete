@@ -1,15 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import ApplicationForm from "@/components/ApplicationForm";
 import Breadcrumb from "@/components/Breadcrumb";
 import CtaBand from "@/components/CtaBand";
+import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Careers | Reedy Concrete",
-  description:
-    "Apply to work at Reedy Concrete Construction, Inc. Complete the employment application on this page.",
-};
+export const metadata = pageMetadata(sitePages.careers);
 
 const careerPoints = [
   {
@@ -32,6 +29,7 @@ const careerPoints = [
 export default function Page() {
   return (
     <main>
+      <JsonLd data={pageGraph(sitePages.careers)} />
       <PageHero
         title="Careers"
         description="Family-owned concrete work, long-term crews, and a place to build a career."

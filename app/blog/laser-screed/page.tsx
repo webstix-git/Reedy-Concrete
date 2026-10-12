@@ -1,15 +1,14 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Why Laser Screed Floors Support Commercial and Industrial Precision | Reedy Concrete Blog",
-  description: "How Somero Laser Screeds and Trimble Robotic Stations help Reedy Concrete deliver precise flatwork on commercial, industrial, and warehouse projects.",
-};
+export const metadata = pageMetadata(sitePages.laserScreed);
 
 export default function Page() {
   return (
     <main>
+      <JsonLd data={pageGraph(sitePages.laserScreed)} />
       <PageHero
         title="Blog"
         description="How Somero Laser Screeds and Trimble Robotic Stations help Reedy Concrete deliver precise flatwork on commercial, industrial, and warehouse projects."

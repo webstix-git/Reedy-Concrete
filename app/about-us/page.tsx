@@ -1,14 +1,11 @@
-import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import CtaBand from "@/components/CtaBand";
+import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import ServiceAreaSection from "@/components/ServiceAreaSection";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Reedy Concrete | Over 50 Years of Concrete Experience",
-  description:
-    "Reedy Concrete Construction, Inc. is a family-owned contractor with more than 50 years of experience in foundations, footings, and flatwork across Wisconsin, Minnesota, and Iowa.",
-};
+export const metadata = pageMetadata(sitePages.about);
 
 const approachItems = [
   {
@@ -66,6 +63,7 @@ const pillars = [
 export default function Page() {
   return (
     <main>
+      <JsonLd data={pageGraph(sitePages.about)} />
       <PageHero
         title="About Us"
         description="A family-owned contractor with more than 50 years of experience in large-scale foundations, footings, and flatwork."

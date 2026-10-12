@@ -1,19 +1,16 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import { company } from "@/lib/company";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Thank You | Reedy Concrete",
-  description:
-    "Thank you for contacting Reedy Concrete. We received your message and will follow up shortly.",
-  robots: { index: false, follow: true },
-};
+export const metadata = pageMetadata(sitePages.thankYou);
 
 export default function Page() {
   return (
     <main>
+      <JsonLd data={pageGraph(sitePages.thankYou)} />
       <PageHero
         title="Thank You"
         description="We received your message and will be in touch shortly."

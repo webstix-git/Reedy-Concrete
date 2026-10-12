@@ -1,17 +1,16 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 import LegalPage from "@/components/LegalPage";
 import { company } from "@/lib/company";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Service Index | Reedy Concrete",
-  description:
-    "Index of Reedy Concrete commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking concrete services.",
-};
+export const metadata = pageMetadata(sitePages.serviceIndex);
 
 export default function Page() {
   return (
-    <LegalPage
+    <>
+      <JsonLd data={pageGraph(sitePages.serviceIndex)} />
+      <LegalPage
       title="Service Index"
       subtitle="A quick index of Reedy Concrete service categories across Wisconsin, Minnesota, and Iowa."
     >
@@ -52,5 +51,6 @@ export default function Page() {
         <a href={`tel:${company.phoneTel}`}>{company.phoneDisplay}</a>.
       </p>
     </LegalPage>
+    </>
   );
 }

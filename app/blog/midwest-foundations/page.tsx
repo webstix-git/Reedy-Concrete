@@ -1,15 +1,14 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "What Midwest Clients Should Expect From a Foundation Pour | Reedy Concrete Blog",
-  description: "What clients should expect from a foundation pour: careful layout, experienced crews, and dependable results from Reedy Concrete.",
-};
+export const metadata = pageMetadata(sitePages.midwestFoundations);
 
 export default function Page() {
   return (
     <main>
+      <JsonLd data={pageGraph(sitePages.midwestFoundations)} />
       <PageHero
         title="Blog"
         description="What Midwest clients should expect from a foundation pour: careful layout, experienced crews, and dependable results from Reedy Concrete."

@@ -1,15 +1,14 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Why Long-Term Crews Change the Pour | Reedy Concrete Blog",
-  description: "Why long-term crews change the pour at family-owned Reedy Concrete in Galesville, Wisconsin.",
-};
+export const metadata = pageMetadata(sitePages.crewTenure);
 
 export default function Page() {
   return (
     <main>
+      <JsonLd data={pageGraph(sitePages.crewTenure)} />
       <PageHero
         title="Blog"
         description="How long-term crews protect quality, schedule, and judgment on family-owned Reedy Concrete jobsites."

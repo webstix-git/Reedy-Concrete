@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
 import LegalPage from "@/components/LegalPage";
 import { company } from "@/lib/company";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "AI Policy | Reedy Concrete",
-  description: "How Reedy Concrete approaches AI-assisted content and website development.",
-};
+export const metadata = pageMetadata(sitePages.aiPolicy);
 
 export default function Page() {
   return (
-    <LegalPage title="AI Policy" subtitle="Our approach to AI-assisted content and website tools.">
+    <>
+      <JsonLd data={pageGraph(sitePages.aiPolicy)} />
+      <LegalPage title="AI Policy" subtitle="Our approach to AI-assisted content and website tools.">
       <p>
         {company.name} may use AI-assisted tools to help draft, organize, or refine website content
         and design. AI is used as a production aid, not as a substitute for company facts,
@@ -42,5 +42,6 @@ export default function Page() {
         policy.
       </p>
     </LegalPage>
+    </>
   );
 }

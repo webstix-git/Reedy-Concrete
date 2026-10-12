@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
 import LegalPage from "@/components/LegalPage";
 import { company } from "@/lib/company";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | Reedy Concrete",
-  description: "Privacy policy for Reedy Concrete website visitors and inquiry contacts.",
-};
+export const metadata = pageMetadata(sitePages.privacy);
 
 export default function Page() {
   return (
-    <LegalPage title="Privacy Policy" subtitle="How Reedy Concrete handles information shared through this website.">
+    <>
+      <JsonLd data={pageGraph(sitePages.privacy)} />
+      <LegalPage title="Privacy Policy" subtitle="How Reedy Concrete handles information shared through this website.">
       <p>
         This Privacy Policy describes how {company.name} (“we,” “us”) handles
         information collected through this website and related inquiry channels.
@@ -51,5 +51,6 @@ export default function Page() {
         <a href={`tel:${company.phoneTel}`}>{company.phoneDisplay}</a>.
       </p>
     </LegalPage>
+    </>
   );
 }

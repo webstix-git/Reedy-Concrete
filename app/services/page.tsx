@@ -1,15 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import CtaBand from "@/components/CtaBand";
+import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import ServiceAreaSection from "@/components/ServiceAreaSection";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services | Reedy Concrete",
-  description:
-    "Foundations, footings, and precise flatwork for commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking projects across Wisconsin, Minnesota, and Iowa.",
-};
+export const metadata = pageMetadata(sitePages.services);
 
 const services = [
   {
@@ -95,6 +92,7 @@ const services = [
 export default function Page() {
   return (
     <main className="services-page">
+      <JsonLd data={pageGraph(sitePages.services)} />
       <PageHero
         title="Services"
         description="Foundations, footings, and precise flatwork for commercial, industrial, warehouse, agricultural, multi-tenant, and underground parking projects across Wisconsin, Minnesota, and Iowa."

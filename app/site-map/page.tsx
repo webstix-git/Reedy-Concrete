@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 import LegalPage from "@/components/LegalPage";
 import { footerLegal, footerServices } from "@/lib/company";
 import { primaryNav } from "@/lib/nav";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Site Map | Reedy Concrete",
-  description: "Site map for Reedy Concrete pages, services, and policies.",
-};
+export const metadata = pageMetadata(sitePages.siteMap);
 
 export default function Page() {
   return (
-    <LegalPage title="Site Map" subtitle="Find pages across the Reedy Concrete website.">
+    <>
+      <JsonLd data={pageGraph(sitePages.siteMap)} />
+      <LegalPage title="Site Map" subtitle="Find pages across the Reedy Concrete website.">
       <h2>Main Pages</h2>
       <ul>
         {primaryNav.map((item) => (
@@ -39,5 +39,6 @@ export default function Page() {
         ))}
       </ul>
     </LegalPage>
+    </>
   );
 }

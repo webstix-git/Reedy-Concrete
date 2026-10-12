@@ -1,15 +1,12 @@
-import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import ContactForm from "@/components/ContactForm";
+import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import ServiceAreaSection from "@/components/ServiceAreaSection";
 import { company } from "@/lib/company";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact Us | Reedy Concrete",
-  description:
-    "Contact Reedy Concrete about commercial, industrial, agricultural, or residential concrete across Wisconsin, Minnesota, and Iowa.",
-};
+export const metadata = pageMetadata(sitePages.contact);
 
 type PageProps = {
   searchParams: Promise<{ error?: string | string[] }>;
@@ -21,6 +18,7 @@ export default async function Page({ searchParams }: PageProps) {
 
   return (
     <main>
+      <JsonLd data={pageGraph(sitePages.contact)} />
       <PageHero
         title="Contact Us"
         description="Talk with Reedy Concrete about your next project. Call, email, or send the details."

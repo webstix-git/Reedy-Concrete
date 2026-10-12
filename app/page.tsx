@@ -1,14 +1,11 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import CtaBand from "@/components/CtaBand";
 import HomeGallery from "@/components/HomeGallery";
+import JsonLd from "@/components/JsonLd";
 import ServiceAreaSection from "@/components/ServiceAreaSection";
+import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Reedy Concrete | Concrete Construction in WI, MN & IA",
-  description:
-    "For more than 50 years, Reedy Concrete has built commercial, industrial, agricultural, and residential concrete across Wisconsin, Minnesota, and Iowa.",
-};
+export const metadata = pageMetadata(sitePages.home);
 
 const showcaseImages = [
   { src: "/assets/photos/aerial-foundation.jpg", alt: "Aerial view of a large-scale concrete foundation" },
@@ -44,6 +41,7 @@ const showcaseImages = [
 export default function Page() {
   return (
     <main>
+      <JsonLd data={pageGraph(sitePages.home)} />
       <section id="home" className="hero" aria-label="Home">
         <div className="hero-media" aria-hidden="true">
           <img src="/assets/photos/hero.jpg" alt="" width={1024} height={768} decoding="sync" />

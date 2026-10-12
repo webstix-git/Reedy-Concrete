@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SiteEffects from "@/components/SiteEffects";
 import BackToTop from "@/components/BackToTop";
+import JsonLd from "@/components/JsonLd";
+import { businessGraph, siteUrl } from "@/lib/seo";
 import "./globals.css";
 import "./header.css";
 
@@ -22,6 +24,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Reedy Concrete | Concrete Construction in WI, MN & IA",
     template: "%s",
@@ -33,7 +36,19 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${oswald.variable} ${roboto.variable}`}>
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2SL7KGERS" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-B2SL7KGERS');`,
+          }}
+        />
+      </head>
       <body>
+        <JsonLd data={businessGraph()} />
         <Header />
         {children}
         <Footer />
