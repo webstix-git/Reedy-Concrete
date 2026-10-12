@@ -1562,6 +1562,15 @@ h3 {
   outline: 1px solid var(--red);
 }
 
+.contact-form .cf-turnstile {
+  min-height: 65px;
+}
+
+.contact-form .form-status {
+  margin-top: 0;
+  color: rgb(255 255 255 / 0.86);
+}
+
 .field label .req {
   color: var(--red);
 }

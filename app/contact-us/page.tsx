@@ -11,7 +11,14 @@ export const metadata: Metadata = {
     "Contact Reedy Concrete about commercial, industrial, agricultural, or residential concrete across Wisconsin, Minnesota, and Iowa.",
 };
 
-export default function Page() {
+type PageProps = {
+  searchParams: Promise<{ error?: string | string[] }>;
+};
+
+export default async function Page({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const formError = Array.isArray(params.error) ? params.error[0] : params.error;
+
   return (
     <main>
       <PageHero
@@ -26,7 +33,7 @@ export default function Page() {
       <section className="contact-page">
         <div className="wrap">
           <div className="contact-layout">
-            <ContactForm />
+            <ContactForm formError={formError} />
 
             <aside className="contact-info-card reveal" aria-label="Contact details">
               <div className="contact-info-row">

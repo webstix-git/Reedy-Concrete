@@ -1,15 +1,24 @@
 "use client";
 
+import Script from "next/script";
 import { FormEvent, useEffect, useState } from "react";
-
-const FORM_ACTION =
-  "https://ywwxvriolxwuqcwjaluh.supabase.co/functions/v1/form-submit/4bcc4b5d-2a39-4534-b3cb-c236032e90c7";
+import { TURNSTILE_SITE_KEY } from "@/lib/turnstile-site";
 
 type FieldKey = "name" | "email" | "phone" | "projectType" | "projectLocation" | "projectDetails";
 
 type FieldErrors = Partial<Record<FieldKey, string>>;
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const FORM_ERRORS: Record<string, string> = {
+  captcha: "Please complete the captcha and try again.",
+  submit: "We couldn't send your message. Please call or email the team.",
+  server: "The form is temporarily unavailable. Please call or email the team.",
+};
+
+type ContactFormProps = {
+  formError?: string;
+};
 
 function ErrorMessage({ message }: { message?: string }) {
   if (!message) return null;
@@ -33,8 +42,9 @@ function ErrorMessage({ message }: { message?: string }) {
   );
 }
 
-export default function ContactForm() {
+export default function ContactForm({ formError }: ContactFormProps) {
   const [errors, setErrors] = useState<FieldErrors>({});
+  const [captchaError, setCaptchaError] = useState("");
   const [redirectTo, setRedirectTo] = useState("/thank-you");
 
   useEffect(() => {
@@ -43,6 +53,7 @@ export default function ContactForm() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     const data = new FormData(event.currentTarget);
+    const captchaToken = String(data.get("cf-turnstile-response") ?? "").trim();
 
     const name = String(data.get("name") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
@@ -61,7 +72,12 @@ export default function ContactForm() {
     if (!projectDetails) nextErrors.projectDetails = "Please tell us about your project.";
 
     setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0) {
+    if (!captchaToken) {
+      setCaptchaError("Please complete the captcha and try again.");
+    } else {
+      setCaptchaError("");
+    }
+    if (Object.keys(nextErrors).length > 0 || !captchaToken) {
       event.preventDefault();
     }
   };
@@ -76,7 +92,14 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="contact-form reveal" action={FORM_ACTION} method="POST" onSubmit={handleSubmit} noValidate>
+    <form
+      id="contact-form"
+      className="contact-form reveal"
+      action="/api/contact"
+      method="POST"
+      onSubmit={handleSubmit}
+      noValidate
+    >
       <input type="hidden" name="redirect" value={redirectTo} />
       <p className="form-note">
         Fields marked with an asterisk (<span className="req">*</span>) are required.
@@ -207,9 +230,22 @@ export default function ContactForm() {
         </span>
       </div>
 
+      <div
+        className="cf-turnstile"
+        data-sitekey={TURNSTILE_SITE_KEY}
+        data-theme="dark"
+        data-action="contact-form"
+      />
+      {captchaError || (formError && FORM_ERRORS[formError]) ? (
+        <p className="form-status" role="alert">
+          {captchaError || FORM_ERRORS[formError ?? ""]}
+        </p>
+      ) : null}
+
       <button className="btn btn-primary" type="submit">
         Request a Quote
       </button>
+      <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" />
     </form>
   );
 }
