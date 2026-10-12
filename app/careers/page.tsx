@@ -8,6 +8,10 @@ import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 
 export const metadata = pageMetadata(sitePages.careers);
 
+type PageProps = {
+  searchParams: Promise<{ error?: string | string[] }>;
+};
+
 const careerPoints = [
   {
     title: "Career pathways",
@@ -26,7 +30,10 @@ const careerPoints = [
   },
 ];
 
-export default function Page() {
+export default async function Page({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const formError = Array.isArray(params.error) ? params.error[0] : params.error;
+
   return (
     <main>
       <JsonLd data={pageGraph(sitePages.careers)} />
@@ -98,7 +105,7 @@ export default function Page() {
           <h2 id="application-title" className="section-title reveal">
             Apply to work at <span className="accent">Reedy Concrete</span>
           </h2>
-          <ApplicationForm />
+          <ApplicationForm formError={formError} />
         </div>
       </section>
 

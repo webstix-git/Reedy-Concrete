@@ -1,9 +1,8 @@
 "use client";
 
+import Script from "next/script";
 import { FormEvent, useEffect, useState } from "react";
-
-const FORM_ACTION =
-  "https://ywwxvriolxwuqcwjaluh.supabase.co/functions/v1/form-submit/b37b385f-15b5-404d-ba29-2639272d6c5d";
+import { TURNSTILE_SITE_KEY } from "@/lib/turnstile-site";
 
 type FieldKey =
   | "name"
@@ -17,6 +16,16 @@ type FieldKey =
 type FieldErrors = Partial<Record<FieldKey, string>>;
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const FORM_ERRORS: Record<string, string> = {
+  captcha: "Please complete the captcha and try again.",
+  submit: "We couldn't send your application. Please call or email the team.",
+  server: "The form is temporarily unavailable. Please call or email the team.",
+};
+
+type ApplicationFormProps = {
+  formError?: string;
+};
 
 function ErrorMessage({ message }: { message?: string }) {
   if (!message) return null;
@@ -60,8 +69,9 @@ function YesNoSelect({
   );
 }
 
-export default function ApplicationForm() {
+export default function ApplicationForm({ formError }: ApplicationFormProps) {
   const [errors, setErrors] = useState<FieldErrors>({});
+  const [captchaError, setCaptchaError] = useState("");
   const [redirectTo, setRedirectTo] = useState("/thank-you");
 
   useEffect(() => {
@@ -70,6 +80,7 @@ export default function ApplicationForm() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     const data = new FormData(event.currentTarget);
+    const captchaToken = String(data.get("cf-turnstile-response") ?? "").trim();
 
     const name = String(data.get("name") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
@@ -90,7 +101,12 @@ export default function ApplicationForm() {
     if (!todaysDate) nextErrors.todaysDate = "Please enter today's date.";
 
     setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0) {
+    if (!captchaToken) {
+      setCaptchaError("Please complete the captcha and try again.");
+    } else {
+      setCaptchaError("");
+    }
+    if (Object.keys(nextErrors).length > 0 || !captchaToken) {
       event.preventDefault();
     }
   };
@@ -105,7 +121,14 @@ export default function ApplicationForm() {
   };
 
   return (
-    <form className="contact-form reveal" action={FORM_ACTION} method="POST" onSubmit={handleSubmit} noValidate>
+    <form
+      id="application-form"
+      className="contact-form reveal"
+      action="/api/careers"
+      method="POST"
+      onSubmit={handleSubmit}
+      noValidate
+    >
       <input type="hidden" name="redirect" value={redirectTo} />
       <p className="form-note">
         Fields marked with an asterisk (<span className="req">*</span>) are required.
@@ -371,9 +394,22 @@ export default function ApplicationForm() {
         </div>
       </div>
 
+      <div
+        className="cf-turnstile"
+        data-sitekey={TURNSTILE_SITE_KEY}
+        data-theme="dark"
+        data-action="career-application"
+      />
+      {captchaError || (formError && FORM_ERRORS[formError]) ? (
+        <p className="form-status" role="alert">
+          {captchaError || FORM_ERRORS[formError ?? ""]}
+        </p>
+      ) : null}
+
       <button className="btn btn-primary" type="submit">
         Submit Application
       </button>
+      <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" />
     </form>
   );
 }
