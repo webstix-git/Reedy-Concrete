@@ -15,7 +15,7 @@ export default function CtaBand({
   title,
   copy,
   imageSrc,
-  primaryHref = "/contact",
+  primaryHref = "/contact-us",
   primaryLabel = "Request a Quote",
   showPhone = true,
 }: CtaBandProps) {

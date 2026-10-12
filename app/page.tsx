@@ -210,7 +210,7 @@ export default function Page() {
             We build our reputation on three simple promises: reliable service, competitive pricing,
             and finishing every job on time.
           </blockquote>
-          <Link className="btn btn-outline" href="/contact">
+          <Link className="btn btn-outline" href="/contact-us">
             Request a Quote
           </Link>
         </div>
@@ -283,7 +283,7 @@ export default function Page() {
                 the company, and the standard on every job is the same: do the work right.
               </p>
               <div className="section-actions family-split-actions">
-                <Link className="btn btn-outline btn-outline--dark" href="/about">
+                <Link className="btn btn-outline btn-outline--dark" href="/about-us">
                   Learn About Reedy Concrete
                 </Link>
               </div>

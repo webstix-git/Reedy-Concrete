@@ -67,7 +67,7 @@ export default function ServiceAreaSection({
             </p>
             {showCta ? (
               <div className="section-actions">
-                <Link className="btn btn-outline btn-outline--dark" href="/contact">
+                <Link className="btn btn-outline btn-outline--dark" href="/contact-us">
                   Contact Us
                 </Link>
               </div>

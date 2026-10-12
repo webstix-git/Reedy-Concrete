@@ -169,7 +169,7 @@ export default function Page() {
                 </h2>
                 <p className="job-runs-lead">{service.copy}</p>
                 <div className="section-actions job-runs-actions">
-                  <Link className="text-link job-runs-link" href="/contact">
+                  <Link className="text-link job-runs-link" href="/contact-us">
                     <span>Request a Quote</span>
                     <svg className="job-runs-link-arrow" viewBox="0 0 16 16" aria-hidden="true" width="14" height="14">
                       <path

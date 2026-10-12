@@ -84,7 +84,7 @@ export default function Page() {
                 <p>If a foundation, warehouse floor, or crew question is on your desk, send the details or call us and we will walk the scope with you.</p>
               </div>
               <div className="actions">
-                <Link className="btn btn-primary" href="/contact">Request a Quote</Link>
+                <Link className="btn btn-primary" href="/contact-us">Request a Quote</Link>
                 <Link className="btn btn-outline" href="/services">Our services</Link>
               </div>
             </div>

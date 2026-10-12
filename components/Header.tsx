@@ -95,7 +95,7 @@ export default function Header() {
             <PhoneIcon />
             <span>{company.phoneDisplay}</span>
           </a>
-          <Link href="/contact" className="nav-cta" onClick={closeNav}>
+          <Link href="/contact-us" className="nav-cta" onClick={closeNav}>
             Request a Quote
           </Link>
         </nav>
@@ -105,7 +105,7 @@ export default function Header() {
             <PhoneIcon />
             <span>{company.phoneDisplay}</span>
           </a>
-          <Link href="/contact" className="nav-cta nav-cta--desktop">
+          <Link href="/contact-us" className="nav-cta nav-cta--desktop">
             Request a Quote
           </Link>
         </div>

@@ -48,7 +48,7 @@ export default function Page() {
 
       <p>
         Ready to discuss a project?{" "}
-        <Link href="/contact">Request a Quote</Link> or call{" "}
+        <Link href="/contact-us">Request a Quote</Link> or call{" "}
         <a href={`tel:${company.phoneTel}`}>{company.phoneDisplay}</a>.
       </p>
     </LegalPage>

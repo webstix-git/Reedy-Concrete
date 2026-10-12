@@ -5,10 +5,10 @@ export type NavLink = {
 
 export const primaryNav: NavLink[] = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About Us" },
+  { href: "/about-us", label: "About Us" },
   { href: "/services", label: "Services" },
   { href: "/careers", label: "Careers" },
-  { href: "/contact", label: "Contact Us" },
+  { href: "/contact-us", label: "Contact Us" },
 ];
 
 export const footerMenu: NavLink[] = [...primaryNav];
