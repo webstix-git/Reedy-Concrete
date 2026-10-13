@@ -8,6 +8,14 @@ import { pageGraph, pageMetadata, sitePages } from "@/lib/seo";
 export const metadata = pageMetadata(sitePages.home);
 
 const showcaseImages = [
+  { src: "/assets/photos/gallery-arctic-view-dairy.jpg", alt: "Reedy Concrete pump truck placing concrete at an agricultural dairy barn" },
+  { src: "/assets/photos/gallery-skyline-flats.jpg", alt: "Tall concrete wall forms at the Skyline Flats project" },
+  { src: "/assets/photos/gallery-foundation-crew.jpg", alt: "Crew and foundation wall forms on a Reedy Concrete jobsite" },
+  { src: "/assets/photos/gallery-rtp-winona.jpg", alt: "Crew finishing a large warehouse concrete floor" },
+  { src: "/assets/photos/gallery-mack-pump-truck.jpg", alt: "Reedy Concrete Mack pump truck parked at a jobsite" },
+  { src: "/assets/photos/gallery-istate-walk.jpg", alt: "Finished concrete walk along an industrial building" },
+  { src: "/assets/photos/gallery-rebar-mesh.jpg", alt: "Crew member setting welded wire mesh before a slab pour" },
+  { src: "/assets/photos/gallery-istate-building.jpg", alt: "Industrial building with a finished concrete apron and loading area" },
   { src: "/assets/photos/aerial-foundation.jpg", alt: "Aerial view of a large-scale concrete foundation" },
   { src: "/assets/photos/gallery-apartment.jpg", alt: "Multi-story commercial building under construction with concrete site work" },
   { src: "/assets/photos/agricultural-silos-slab.jpg", alt: "Agricultural concrete slab with grain silos and elevator" },
